@@ -48,7 +48,7 @@ export default async function Project() {
     // const [scroll, setScroll] = useState(false);
     return (
       <>
-      <div className="grid sm:grid-cols-2 xl:grid-cols-4 dark:bg-gray-900 dark:text-white">
+      <div className="grid sm:grid-cols-2 xl:grid-cols-4 dark:bg-gray-900 dark:text-white pt-5">
       {await appsfetcher()}
       </div>
       </>

@@ -1,0 +1,6 @@
+img:hover {
+  transition: width 0.25s ease-in;
+}
+img {
+  transition: width 0.25s ease-in-out;
+}

@@ -3,7 +3,7 @@ import { Storelist } from "../shared/types";
 export default function storeslist({stores}:Storelist){
     return (
         <>
-        <div className="flex flex-row">
+        <div className="flex flex-row p-4">
 
         {stores.map((store) => (
             <div className="pr-4 h-7 sm:h-10">

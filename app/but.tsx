@@ -4,6 +4,7 @@ import { useState,useEffect, useContext } from 'react';
 import { useLocalStorage } from '../src/components/useLocalStorage';
 // import { ThemeContext } from '../src/components/ThemeContext';
 import { useTheme } from 'next-themes';
+import '../styles/imgstutter.css'
 // export function darkorwhite(){
 //   let key="dark";
 //   let wtr=false;
@@ -52,7 +53,9 @@ export default function DarkButton() {
   // },[showon]);
   return (
     <>
-    <div className='dark:bg-gray-900'>
+    
+    <div className='dark:bg-gray-900 h-5'>
+    <span className='p-2.5 absolute right-0'>
 
       <button
         id="theme-toggle"
@@ -82,6 +85,11 @@ export default function DarkButton() {
           ></path>
         </svg>
       </button>
+      </span>
+<span className='p-2.5 absolute left-0'>
+
+                    <img alt="image of Vishnu N K" className=" rounded-full w-9 sm:w-20 sm:hover:w-48 hover:w-28" src="https://cdn.jsdelivr.net/gh/visnkmr/hv2static@main/1654419210688.jpg"/>
+</span>
     </div>
 
     </>

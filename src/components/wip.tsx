@@ -24,7 +24,7 @@ async function appsfetcher() {
             </noscript>
             {/* <div id="whenjs" style={{display: "none"}}> */}
 
-             <LineClamp className="m-4 max-w-[30ch] text-sm opacity-50" text={app.content} lines={2}/>
+             <LineClamp className="m-4 max-w-[30ch] text-sm " text={app.content} lines={2}/>
             {/* </div> */}
              <StoreIcons storename={app.tags} w={1}/>
         </div>

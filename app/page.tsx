@@ -11,6 +11,7 @@ import Commits from "../src/components/commits";
 import Topthread from "../src/components/topthread";
 import DarkButton from "./but";
 import Mq from "../src/components/mq";
+import recentprojs from "../src/components/recentprojs";
 // import { ThemeContext, ThemeProvider } from "../src/components/ThemeContext";
 // import { useContext } from "react";
 // import { createServerContext } from 'react';
@@ -32,9 +33,10 @@ export default async function Page() {
       <div className="dark:bg-gray-900">
       
           {await Homepage()}
-          {/* <Planglist/> */}
-          {await Project()}
           <Ct/>
+          {/* <Planglist/> */}
+          {await recentprojs()}
+          {await Project()}
           <Commits/>
       </div>
 
