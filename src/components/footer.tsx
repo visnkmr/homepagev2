@@ -1,12 +1,14 @@
+import { Github, Linkedin, Youtube } from "lucide-react";
 import React from "react";
 // import '../../styles/globals.css'
 export default function Footer() {
     return (
       <>
-        <footer className="bg-slate-800 dark:bg-blue-500 text-white" >
+        <footer className="bg-slate-800 dark:bg-white text-black" >
           <div className="pt-9 sm:grid sm:grid-cols-3 justify-center items-center text-center m-5">
+          
             <div className="flex flex-col space-y-2">
-              <div>
+              {/* <div>
                   <a
                     aria-label="linkedin"
                     target="_blank"
@@ -16,8 +18,8 @@ export default function Footer() {
                   >
                     Linkedin
                   </a>
-                </div>
-                <div>
+                </div> */}
+                {/* <div>
                   <a
                     aria-label="github"
                     target="_blank"
@@ -27,7 +29,7 @@ export default function Footer() {
                   >
                     Github
                   </a>
-                </div>
+                </div> */}
                 <div>
                   <a
                     aria-label="codeberg"
@@ -43,7 +45,7 @@ export default function Footer() {
 
               </div>
              <div className="flex flex-col space-y-2">
-            <div  >
+            {/* <div  >
             <a
                     aria-label="youtube"
                     target="_blank"
@@ -53,7 +55,7 @@ export default function Footer() {
                   >
                     Youtube
                   </a>
-                  </div>
+                  </div> */}
                 <div  >
                 <a
                   aria-label="telegram"
@@ -76,13 +78,20 @@ export default function Footer() {
                 </div>
             </div>
           </div>
-          <div className="p-10 ">
-            <div className="">
+          <div className="p-10 flex justify-center">
+            <div className="text-sm">
               <span>
-                <h1>
+              <div className="flex space-x-4 justify-center p-4">
+                <Linkedin/>
+                <Github/>
+                <Youtube/>
+              </div>
+                <div className="opacity-50 text-center">
                   Copyright © {new Date().getFullYear()} Vishnu N K. All rights reserved.<br/>
-                Made from scratch using NextJS, React and Tailwind.
-                  </h1>
+                <div className=" ">
+                  Made from scratch using NextJS, React and Tailwind.
+                  </div>
+                  </div>
               </span>
             </div>
           </div>
