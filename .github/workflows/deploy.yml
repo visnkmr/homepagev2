@@ -79,19 +79,17 @@ jobs:
       #   uses: actions/upload-pages-artifact@v2
       #   with:
       #     path: ./out
-      - name: Push out files to static hosting repo for jsdelivr cdn
-        run: cd ./out
       - name: Set configs
         run: |
           git config --global user.email "12533753+visnkmr@users.noreply.github.com"
           git config --global user.name "fromghrunner"
           git config --global init.defaultBranch main
-      - name: Init and push
-        run: |    
           git init
           git add .
           git commit -m "based on latest release on https://github.com/visnkmr/homepagev2"
-          git push -f https://${{ github.repository_owner }}:${{ secrets.TOKEN }}@github.com/visnkmr/hv2static.git main
+          git push -f https://git:${{ secrets.TOKEN }}@github.com/visnkmr/hv2static.git main
+        working-directory: ./out
+        
   # Deployment job
   # deploy:
     # environment:
