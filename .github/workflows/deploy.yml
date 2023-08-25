@@ -80,10 +80,14 @@ jobs:
         with:
           path: ./out
       - name: Push out files to static hosting repo for jsdelivr cdn
+        run: cd out
+      - name: Set configs
         run: |
-          cd out
-          git config --local user.email "12533753+visnkmr@users.noreply.github.com"
-          git config --local user.name "fromghrunner"
+          git config --global user.email "12533753+visnkmr@users.noreply.github.com"
+          git config --global user.name "fromghrunner"
+          git config --global init.defaultBranch main
+      - name: Init and push
+        run: |    
           git init
           git add .
           git commit -m "based on latest release on https://github.com/visnkmr/homepagev2"
