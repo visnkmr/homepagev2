@@ -87,7 +87,7 @@ jobs:
           git init
           git add .
           git commit -m "based on latest release on https://github.com/visnkmr/homepagev2"
-          git push -f https://git:${{ secrets.TOKEN }}@github.com/visnkmr/hv2static.git main
+          git push -f https://git:${{ secrets.TOKEN }}@github.com/visnkmr/visnkmr.github.io.git main
         working-directory: ./out
         
   # Deployment job
