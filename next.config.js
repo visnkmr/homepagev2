@@ -29,9 +29,10 @@ module.exports = withBundleAnalyzer({
   
   // basePath: '/tmp/webpage/out',
   // basePath: '/home/roger/Downloads/github/webpage/out',
-  assetPrefix: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/',
+  // assetPrefix: 'https://visnkmr.github.io/homepagev2/',
   // assetPrefix: 'https://visnk.pages.dev/',
-  // assetPrefix: 'https://cdn.jsdelivr.net/gh/visnkmr/hv2static@main/',
+    // assetPrefix: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/',
+  assetPrefix: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/',
   // amp:false,
   // basePath: 'https://cdn.jsdelivr.net/gh/visnkmr/hv2static@master/',
   // async rewrites(){
