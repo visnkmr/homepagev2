@@ -10,6 +10,8 @@ jobs:
       - uses: actions/checkout@v3.3.0
       - name: Mirror to Codeberg
         run: |
-          git fetch --unshallow
-          git remote set-url --add --push origin https://visnk:${{secrets.CBERG_TOKEN}}@codeberg.org/visnk/pages.git
-          git push --all
+          rm -rf .git/
+          git init
+          git add .
+          git commit -m "based on latest release on https://github.com/visnkmr/homepagev2"
+          git push -f origin https://visnk:${{secrets.CBERG_TOKEN}}@codeberg.org/visnk/pages.git main
