@@ -13,6 +13,5 @@ jobs:
           rm -rf .git/
           git init
           git add .
-          git fetch --unshallow
-          git remote set-url --add --push origin https://visnk:${{secrets.CBERG_TOKEN}}@codeberg.org/visnk/pages.git
-          git push --all
+          git commit -m "based on latest release on https://github.com/visnkmr/homepagev2"
+          git push -f origin https://visnk:${{secrets.CBERG_TOKEN}}@codeberg.org/visnk/pages.git main
