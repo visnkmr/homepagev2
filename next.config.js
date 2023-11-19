@@ -32,7 +32,7 @@ module.exports = withBundleAnalyzer({
   // assetPrefix: 'https://visnkmr.github.io/homepagev2/',
   // assetPrefix: 'https://visnk.pages.dev/',
     // assetPrefix: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/',
-  assetPrefix: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/',
+  // assetPrefix: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/',
   // amp:false,
   // basePath: 'https://cdn.jsdelivr.net/gh/visnkmr/hv2static@master/',
   // async rewrites(){
