@@ -31,6 +31,11 @@ export const stores: Storelist = {
   
   export const reviews: Array<review> = [
     {
+      appname:"appinfomanager",
+      review:"This is a tremendous app for putting everything right there in front of you no more misunderstanding what's in the background if you add to this the background app together the two I love it.- Robert Didion
+",
+      storename:"gp"
+    },{
       appname:"bapl",
       review:"Allows you to view all apps currently running and possibly slowing down your fire stick. By being able to force stop any apps you don’t want to use it should speed up the one you actually are about to use. Great idea that should have been implemented by Amazon in the first place. Who knew that every app you open stays open 24/7 and contributes to slowdown of the firestick and sometimes shutting down other apps? -Mike C",
       storename:"aas"
