@@ -1,13 +1,6 @@
 import React from "react";
 import Textspin from "./textloop";
-const TEXTS = [
-  "Android",
-  "Fire OS",
-  "Windows",
-  "Linux",
-  "Mac",
-  "Web"
-  ];
+
 export default function Stats(){
     return (
         <>
@@ -20,7 +13,7 @@ export default function Stats(){
         <div className="text-center mb-10 md:mb-0">
           <p className="text-sm dark:text-slate-400 font-medium lg:text-base text-gray-800 tracking-widest">Apps for</p>
           <div className="font-bold font-heading text-4xl lg:text-5xl text-[#039de1] xl:text-6xl">
-            <Textspin text={TEXTS} direction={'up'} interval={1500}/>
+            
             </div>
         </div>
         {/* <div className="block sm:hidden">
