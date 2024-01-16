@@ -21,16 +21,24 @@ import Upto from "./countup";
 // import showon from '../../app/but'
 // import { useEffect } from 'react';
 const TEXTS = [
-    "Efficient",
-    "Responsive",
-    "Secure",
+    "Android",
+    "Fire OS",
+    "Windows",
+    "Linux",
+    "Mac",
+    "Web"
     ];
-const DTEXTS = [
-    "Phone",
-    "Tablet",
-    "PC",
-    "TV",
-    ];
+// const TEXTS = [
+//     "Efficient",
+//     "Responsive",
+//     "Secure",
+//     ];
+// const DTEXTS = [
+//     "Phone",
+//     "Tablet",
+//     "PC",
+//     "TV",
+//     ];
 export default function Homepage(){
     
     // var randval="no";
@@ -49,7 +57,7 @@ export default function Homepage(){
         
         <div className="dark:bg-gray-900">
         <div className="mx-auto px-4 sm:px-6 md:flex justify-center">
-            <div className="block md:flex text-center">
+            <div className="block md:flex">
             {/* <div className="block md:flex lg:py-16 md:py-12 py-12 text-center"> */}
             <div className="flex flex-col items-center basis-3/5 md:pb-0 md:pr-16 md:py-0 mx-auto ">
             <div className="flex flex-col sm:flex-row">
@@ -63,23 +71,19 @@ export default function Homepage(){
                 /~ Building efficient and effective software for a better world ~/
                 /~ Products available for Android, Fire OS, Windows, Linux, Mac, Web Android. ~/
                 </h1>*/}
-                <div className="mx-auto">
-                <h1 className="text-gray-900 sm:mb-8 text-center font-bold font-heading leading-tighter tracking-tighter xl:px-0 xl:text-[3.48rem] px-4 text-2xl sm:text-5xl dark:text-white mb-10">
+                <div className="">
+                <div className="text-gray-900 sm:mb-8 leading-tighter tracking-tighter  px-4 text-2xl dark:text-white mb-10 text-center">
                 {/* Our products have featured on most media outlets around the world, in most languages.  */}
-                Building <Textspin text={TEXTS} direction={"down"} interval={1000}/> apps.
-                <noscript>
-                Products available for Android, Fire OS, Windows, Linux, Mac, Web.
-                </noscript>
-                </h1>
+                Experienced Software Engineering.<br/>
+                Powering 15M+ sessions Worldwide across Products available for Android, Fire OS, Windows, Linux, Mac, Web.
+                {/* <Textspin text={TEXTS} direction={'up'} interval={1500}/> */}
+                </div>
                 <div className="flex justify-center pb-10">
                 
                     <Stores {...stores} />
                 </div>
-                <h1 className="text-gray-900 sm:mb-8 text-center font-bold font-heading leading-tighter tracking-tighter xl:px-0 xl:text-[3.48rem] px-4 text-2xl sm:text-5xl dark:text-white ">
-                    <noscript>
-                        Powering 15M+ sessions.
-                    </noscript>
-                   Powering <Upto/>+ sessions.
+                <h1 className="text-gray-900 sm:mb-8 text-center font-bold font-heading leading-tighter tracking-tighter xl:px-0 xl:text-[3.48rem] px-4 text-2xl sm:text-5xl dark:text-white "> 
+                   
                 </h1>
                 </div>
                 
@@ -105,7 +109,7 @@ export default function Homepage(){
         </div>
         {recentprojs()}
         {/* <Mq/> */}
-        <Stats/>
+        {/* <Stats/> */}
 
         </div>
         </>

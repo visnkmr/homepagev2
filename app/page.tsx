@@ -40,6 +40,7 @@ export default function Page() {
       <div className="dark:bg-gray-900">
       
           <Homepage/>
+          <span className='m-4'></span>
           {/* <Planglist/> */}
           <Project/>
           <Ct/>
