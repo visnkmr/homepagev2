@@ -1,0 +1,12 @@
+{
+    "git": {
+      "deploymentEnabled": {
+        "main": false,
+        "vercel": true,
+        "autopushtocodebergonchange": false,
+        "test":false,
+        "amu":false,
+        "tryout":false
+      }
+    }
+   }
