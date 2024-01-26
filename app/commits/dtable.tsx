@@ -1,5 +1,5 @@
 'use client';
-
+import { Suspense } from "react";
 import { eCommit} from './columns';
 import { DataTable } from './data-table';
 import dwc, { tabledata } from '../../src/dealcommits';
@@ -33,8 +33,8 @@ function getData(): eCommit[] {
     const data = getData();
   
     return (
-      
+      <Suspense fallback={<div>Loading...</div>}>
         <DataTable columns={columns} data={data} />
-          
+      </Suspense>
     );
   }
