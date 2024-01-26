@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import ScrollText from "./ScrollText";
+// import ScrollText from "./ScrollText";
 import Lightbulb from "./Lightbulb";
 import Marquee from "react-fast-marquee";
 import { useQuery } from "@tanstack/react-query";
@@ -22,15 +22,15 @@ export default function Topthread(){
         <section className="flex bg-slate-800 dark:bg-blue-500">
             <noscript>
             <div className="sm:flex hidden font-medium px-4 mx-auto py-4 sm:px-6 text-center text-md text-white">
-            <Lightbulb/><a className="ps-4 text-white dark:text-white" href={"https://github.com/visnkmr/backgroundappslist/"}>
-            Background Apps and Process List app update should now be available on all appstores. If you still haven't recieved any update. Please report the issue on github.
+            <Lightbulb/><a className="ps-4 text-white dark:text-white" href={"https://github.com/visnkmr/visnkmr/issues/"}>
+            Please check out our telegram channel for latest updates about apps, report issues on github.
                 </a>
             </div>
             </noscript>
         <Marquee pauseOnHover>
-            <div className="sm:flex hidden font-medium px-4 mx-auto py-4 sm:px-6 text-center text-md text-white">
-            <Lightbulb/><a className="ps-4 text-white dark:text-white" href={"https://github.com/visnkmr/backgroundappslist/"}>
-            Background Apps and Process List app update should now be available on all appstores. If you still haven't recieved any update. Please report the issue on github.
+            <div className="sm:flex  hidden font-medium px-4 mx-auto py-4 sm:px-6 text-center text-md text-white">
+            <Lightbulb/><a className="ps-4 text-white dark:text-white" href={"https://github.com/visnkmr/visnkmr/issues/"}>
+            Please check out our telegram channel for latest updates about apps, report issues on github.
                 </a>
             </div>
         </Marquee>
