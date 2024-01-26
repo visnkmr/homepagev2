@@ -19,6 +19,7 @@ import Topthread from "../src/components/topthread";
 import DarkButton from "./but";
 import Mq from "../src/components/mq";
 import Contactme from "../src/components/contactme";
+import AlertInfo from './Alertinfo';
 // import { ThemeContext, ThemeProvider } from "../src/components/ThemeContext";
 // import { useContext } from "react";
 // import { createServerContext } from 'react';
@@ -37,6 +38,7 @@ export default function Page() {
       <>
       {/* <ThemeProvider> */}
       {/* <div className={dark ? 'dark' : ''}> */}
+      <AlertInfo/>
       <div className="dark:bg-gray-900">
       
           <Homepage/>
