@@ -62,10 +62,10 @@ export default function Eachapp({app}){
       
 
       {/* <img src={image} className="w-32"/> */}
-      <div className="flex flex-row"><span className="m-4 flex flex-row">
-
-      <Download className="mr-2"/><LineClamp className="font-bold" text={app.download} lines={2}/>
-      </span>
+      <div className="flex flex-row m-4 place-content-center">
+      {app.download?(<><span className="flex flex-row m-4"><Download className="mr-2"/><LineClamp className="font-bold" text={app.download} lines={2}/></span></>):null}
+      
+      
       <StoreIcons storename={app.tags} w={1}/>
       
       </div>

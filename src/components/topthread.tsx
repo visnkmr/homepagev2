@@ -27,13 +27,21 @@ export default function Topthread(){
                 </a>
             </div>
             </noscript>
+            <div className="sm:flex hidden font-medium px-4 mx-auto py-4 sm:px-6 text-center text-md text-white">
+            <Lightbulb/><a className="ps-4 text-white dark:text-white" href={"https://github.com/visnkmr/visnkmr/issues/"}>
+            Please check out our telegram channel for latest updates about apps, report issues on github.
+                </a>
+            </div>
+            <div className="flex sm:hidden">
+
         <Marquee pauseOnHover>
-            <div className="sm:flex  hidden font-medium px-4 mx-auto py-4 sm:px-6 text-center text-md text-white">
+            <div className="flex sm:hidden  font-medium px-4 mx-auto py-4 sm:px-6 text-center text-md text-white">
             <Lightbulb/><a className="ps-4 text-white dark:text-white" href={"https://github.com/visnkmr/visnkmr/issues/"}>
             Please check out our telegram channel for latest updates about apps, report issues on github.
                 </a>
             </div>
         </Marquee>
+            </div>
         </section>
 
         </>

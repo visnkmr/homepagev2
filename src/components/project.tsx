@@ -26,9 +26,11 @@ export default function Project() {
     // const [scroll, setScroll] = useState(false);
     return (
       <>
-      <div className="grid sm:grid-cols-2 xl:grid-cols-4 dark:bg-gray-900 dark:text-white">
+      <div className="grid sm:grid-cols-2 xl:grid-cols-3 dark:bg-gray-900 dark:text-white">
       {appsfetcher()}
+      
       </div>
+      <p className="w-full text-center m-5 italic text-xs">Download counts last updated in Dec 2022.</p>
       </>
     );
   }

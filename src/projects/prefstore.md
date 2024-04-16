@@ -1,12 +1,12 @@
 ---
 publishDate: ''
-title: 'Iomer'
+title: 'Prefstore'
 description: 'A simple, High Performance file explorer built in rust for PC.'
-excerpt: ''
+excerpt: 'Open Source'
 download: ''
 image: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images'
 tags: [gh]
 oss: t
 ---
 
-A simple, High Performance File explorer made using rust for PC. Support multi-window, tabs, fzf like search, swift folder size compute, hot reload for markdown, html.
+Rust lib to save preferences with one line of code.
