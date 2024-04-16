@@ -103,7 +103,7 @@ export default function Homepage(){
             {/* </div> */}
 
             {/* <div className="sm:flex sm:flex-row"> */}
-            {showb?(<><Caro/></>):null}
+            
 
             {/* </div> */}
             
@@ -116,7 +116,10 @@ export default function Homepage(){
         {/* {recentprojs()} */}
         {/* <Mq/> */}
         {/* <Stats/> */}
+        <div className="flex place-content-center w-full">
 
+        {showb?(<><Caro/></>):null}
+        </div>
         </div>
         </>
     );
