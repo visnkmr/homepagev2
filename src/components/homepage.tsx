@@ -60,7 +60,7 @@ export default function Homepage(){
         <div className="mx-auto px-4 sm:px-6 md:flex justify-center">
             <div className="block md:flex w-full">
             {/* <div className="block md:flex lg:py-16 md:py-12 py-12 text-center"> */}
-            <div className="flex flex-col items-center basis-3/5 md:pb-0 md:py-0 mx-auto w-full ">
+            <div className="flex flex-col items-center md:pb-0 md:py-0 mx-auto w-full ">
             <div className="flex flex-col sm:flex-row w-full">
 
                 {/* <span className="flex"> */}
@@ -78,8 +78,8 @@ export default function Homepage(){
                 Shipping Software since 2018. Powering 15M+ sessions Worldwide.
                 {/* <Textspin text={TEXTS} direction={'up'} interval={1500}/> */}
                 </div>
-                <div className="flex justify-center pb-10 w-full">
-                <div className="flex flex-col place-items-center gap-4 sm:flex-row w-full">
+                <div className="flex justify-center pb-10">
+                <div className="flex flex-col place-items-center gap-4 sm:flex-row">
 
                     <Stores {...stores} />
                     <Button variant={"outline"} className='hidden sm:block' onClick={()=>{
