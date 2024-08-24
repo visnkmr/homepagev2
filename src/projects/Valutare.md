@@ -1,6 +1,7 @@
 ---
 publishDate: ''
 title: 'Valutare Calculator'
+downloadurl: https://github.com/visnkmr/calculator/releases/latest
 description: ''
 excerpt: ''
 download: '50k+ '
