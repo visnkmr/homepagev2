@@ -35,20 +35,35 @@ export default function Eachapp({app}){
     // onMouseEnter={onMouseEnter}
     // onMouseLeave={onMouseLeave}
     className="grid place-items-center sm:grid-cols-1 xl:grid-cols-1 dark:bg-gray-900 dark:text-white rounded-2xl mb-8  "> 
-    <div className="grid place-items-center sm:grid-cols-2 xl:grid-cols-2 mb-28 ">
+    <div className="container mx-auto px-4 py-8">
+      <div className="grid md:grid-cols-2 gap-12 items-center mb-28">
+        <div className="space-y-4 items-center">
+          <h2 className="text-3xl font-bold">{app.title}</h2>
+          <p className="text-white-600">
+            {app.content}
+          </p>
+          <div className="space-x-4">
+          </div>
+        </div>
+        <div className="w-48">
+        <Llimage url={app.image}/>
+        </div>
+      </div>
+      </div>
+    {/* <div className="grid md:grid-cols-2 gap-12 ">
       
-    <div className="col-span-1 w-32" >
-      <h1>
+    <div className="col-span-1" >
+      <h1 className="">
         {app.title}
       </h1>
-      <p className="w-20">
+      <p className="">
       {app.content}
       </p>
     </div>
-    <div className="col-span-1 w-36 ">
+    <div className="col-span-1 ">
       <Llimage url={app.image}/>
     </div>
-      </div>            
+      </div>             */}
       {/* <div className="w-120 p-4">
           <img
           src={image}
