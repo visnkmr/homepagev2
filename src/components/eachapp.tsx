@@ -29,26 +29,39 @@ export default function Eachapp({app}){
     return (
     <div 
     key={app.slug}
-    onClick={()=>setshow((old)=>{
-        return !old
-    })} 
+    // onClick={()=>setshow((old)=>{
+    //     return !old
+    // })} 
     // onMouseEnter={onMouseEnter}
     // onMouseLeave={onMouseLeave}
-    className="sm:flex shadow-indigo-500/50 shadow-[0_0_15px_rgba(0,0,0,0.2)] rounded-2xl col-span-1 mx-5 xl:mx-4 mb-8  p-4 ">             
-    
+    className="grid place-items-center sm:grid-cols-1 xl:grid-cols-1 dark:bg-gray-900 dark:text-white rounded-2xl mb-8  "> 
+    <div className="grid place-items-center sm:grid-cols-2 xl:grid-cols-2 mb-28 ">
+      
+    <div className="col-span-1 w-32" >
+      <h1>
+        {app.title}
+      </h1>
+      <p className="w-20">
+      {app.content}
+      </p>
+    </div>
+    <div className="col-span-1 w-36 ">
+      <Llimage url={app.image}/>
+    </div>
+      </div>            
       {/* <div className="w-120 p-4">
           <img
           src={image}
           className="w-120 "/>
       </div> */}
-      <div className="text-center w-full ">
+      {/* <div className="text-center w-full ">
       <h3 className="font-bold text-center m-4">{app.title}</h3>
         <div className="">
         
-        </div>
+        </div> */}
          {/* <img src={app.image} className="w-full object-contain flex justify-center rounded-2xl " style={{ marginTop: '-15px' }}/> */}
-        <div className={`h-96 overflow-hidden ${show?"":"hidden"}`}>
-        <Llimage url={app.image}/>
+        {/* <div className={`h-96 overflow-hidden ${show?"":"hidden"}`}>
+        
         </div>
         <div className="rounded-xl">
 
@@ -56,24 +69,24 @@ export default function Eachapp({app}){
 
              <div >{app.content}</div>
             </noscript>
-      <LineClamp text={app.content} lines={2} />
+      <LineClamp text={app.content} lines={2} /> */}
 
       {/* <p className="line-clamp-2 text-center">{content}</p> */}
       
 
       {/* <img src={image} className="w-32"/> */}
-      <div className="flex flex-row m-4 place-content-center">
+      {/* <div className="flex flex-row m-4 place-content-center">
       {app.download?(<><span className="flex flex-row m-4"><Download className="mr-2"/><LineClamp className="font-bold" text={app.download} lines={2}/></span></>):null}
       
       
       <StoreIcons storename={app.tags} w={1}/>
       
-      </div>
-      <LineClamp text={app.excerpt} className="font-bold text-center m-4" lines={1}/>
+      </div> */}
+      {/* <LineClamp text={app.excerpt} className="font-bold text-center m-4" lines={1}/> */}
       {/* <h5 className="line-clamp-2 font-bold text-center m-4">{download}</h5> */}
       
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
     </div>
     );
 }
