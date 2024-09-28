@@ -2,6 +2,7 @@
 publishDate: ''
 title: 'Filedime'
 downloadurl: https://github.com/visnkmr/filedime/releases/latest
+image: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/filedime.webp'
 description: 'The rust based file explorer for PC.'
 download: ''
 excerpt: 'Open Source'
