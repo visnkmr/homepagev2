@@ -8,4 +8,4 @@ image: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/bapl.w
 tags: [aas, gp, ms, gh]
 ---
 
-Force close apps that are running in the background.
+My most used product yet, having garnered praise from multiple media outlet as being a "Must Have" for Android users. It allows you to force close background apps using your TV remote, mouse.

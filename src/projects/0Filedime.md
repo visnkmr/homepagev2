@@ -10,4 +10,4 @@ tags: [pc,gh,win,lx,mos]
 oss: t
 ---
 
-Filedime, an open source almost feature complete file explorer written in Rust (for all filesystem interaction,backend), Tauri(for frontend, front-backend intercom). Support multi-window, tabs, fzf like search, swift folder size compute, hot reload for markdown,etc. It has a separate python based server implementation, which when running allows you to query your files* locally using ollama via RAG.A  MeloTTS based file readout* option is also available. *currently supports only select file types.
+File manager with fast fzf like search, swift folder size compute, hot reload for markdown, Question your files and find answers based on its contents, file content readout based on melotts voice

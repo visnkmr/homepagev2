@@ -8,4 +8,4 @@ image: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/fx.web
 tags: [aas,ms,gh]
 ---
 
-Uses ForkJoin pool, Fuzzy Logic based search, Memoization, Glide, GSON, Recycleview.
+File explorer primarily made for Android TVs and Fire TVs. 

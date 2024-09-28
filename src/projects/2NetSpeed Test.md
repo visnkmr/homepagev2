@@ -8,4 +8,4 @@ image: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/nst.we
 tags: [aas,mas,gp,gh]
 oss: f
 ---
-Test Internet download speed, latency (ping) on any android device. Smart test lets you Check bandwidth in any app of your choice to identify whether ISP is throttling data speeds for specific apps.
+In addition to being your usual netspeed tester includes a tool to identify whether ISP is throttling data speeds for specific apps on your android. Encourages users to use the multi window option that is now widely available on android to monitor active network speed in use.
