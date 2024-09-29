@@ -1,3 +1,4 @@
+import { Github, Linkedin, Youtube } from "lucide-react";
 import React from "react";
 // import '../../styles/globals.css'
 export default function Footer() {
@@ -5,15 +6,9 @@ export default function Footer() {
       <>
         <footer className="bg-slate-800  text-white" >
           <div className="grid place-items-center text-center w-full p-20">
-
-            <div className="text-2xl pt-8 grid md:grid-flow-col gap-y-8 gap-x-8">
-            <div>
-                  <a aria-aria-label="privacy policy" href="/privacy">Privacy Policy</a>
-                </div>
-                {/* <div>
-                  <a aria-aria-label="appchoose" href="https://appchoose.blogspot.com">AppChoose</a>
-                </div> */}
-                <div  >
+          
+            <div className="text-2xl pt-8 grid grid-flow-col gap-y-8 gap-x-8">
+            <div  >
             <a
                     aria-label="youtube"
                     target="_blank"
@@ -21,9 +16,40 @@ export default function Footer() {
                     href="https://youtube.com/@vishnunk"
                     
                   >
-                    Youtube
+                    <Youtube/>
                   </a>
-                  </div>
+              </div>
+              <div>
+              <a
+                aria-label="linkedin"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/vishnunk-59124/"
+                
+              >
+                <Linkedin/>
+              </a>
+            </div>
+            <div>
+              <a
+                aria-label="github"
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/visnkmr"
+                
+              >
+                <Github />
+              </a>
+            </div>
+            </div>  
+            <div className="text-lg pt-8 grid md:grid-flow-col gap-y-8 gap-x-8">
+            <div>
+                  <a aria-aria-label="privacy policy" href="/privacy">Privacy Policy</a>
+                </div>
+                {/* <div>
+                  <a aria-aria-label="appchoose" href="https://appchoose.blogspot.com">AppChoose</a>
+                </div> */}
+                
                 <div  >
                 <a
                   aria-label="telegram"
@@ -32,28 +58,7 @@ export default function Footer() {
                   href="https://vishnunkmr.t.me/"
                   >Telegram</a>
                 </div>
-                <div>
-                  <a
-                    aria-label="linkedin"
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://www.linkedin.com/in/vishnunk-59124/"
-                    
-                  >
-                    Linkedin
-                  </a>
-                </div>
-                <div>
-                  <a
-                    aria-label="github"
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://github.com/visnkmr"
-                    
-                  >
-                    Github
-                  </a>
-                </div>
+                
                 <div>
                   <a
                     aria-label="codeberg"
