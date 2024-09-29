@@ -45,29 +45,32 @@ export default function Page() {
           <span className='m-4'></span>
           {/* <Planglist/> */}
           <div className='grid place-items-center w-full'>
-          <div className='grid place-items-center'>
-            <h1 className='text-center'>Who am i</h1>
-          </div>
-          <div className='grid place-items-center grid-cols-3 w-full'>
-            <div className='col-span-1'>
-              <h1>test</h1>
-            </div>
-            <div className='col-span-1'>
-              <h1>test</h1>
-            </div>
-            <div className='col-span-1'>
-              <h1>test</h1>
+            <div className='container'>
+
+          <div className='grid grid-cols-3 w-full'>
+          <div className='col-span-1'>
+              <h1 className='text-4xl'>I......</h1>
             </div>
 
           </div>
-          <h1>test</h1>
-          <h1>test</h1> 
+          <div className='grid place-items-center grid-cols-3   '>
+            <div className='col-span-1'>
+            <p>started out development in visual basic, flashing custom roms on android, then made software for them, been there for transition from eclipse to android studio, later transitioning to a more web centric role and with it came a need for scailing services, understanding fundamentals of linux. With a strong background in computer science, I possess robust system design and programming skills that I continue to refine on a day to day basis. Focusing on performance and efficiency, has helped in making me mostly programming language agnostic while maintaining a strong grasp of underlying concepts.</p>
+            </div>
+            <div className='pt-8 col-span-1'>
+            <p>I firmly believe in the power of hard work. No matter how many times I need to start over, the thrill of bringing my vision to life is what drives me.</p>
+            </div>
+            <div className='pt-16 col-span-1'>
+              <p>I value happiness and transparency in the people around me, and I'm genuinely interested in working within a culture that embodies these values.</p>
+            </div>
+          </div>
+            </div>
           </div>
           <Project/>
           <Ct/>
           <Commits/>
           <Contactme/>
-          <p className="text-center flex justify-center italic">This page was made using NextJS, React and Tailwind.</p>
+          {/* <p className="text-center flex justify-center italic">This page was made using NextJS, React and Tailwind.</p> */}
       </div>
 
         {/* </div> */}
