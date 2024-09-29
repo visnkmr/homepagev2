@@ -69,7 +69,7 @@ export default function Page() {
           <Ct/>
           <div className="items-center leading-tighter tracking-tight  text-center font-bold text-4xl p-10 pb-18">
         {/* <span className="bg-gray-300"> */}
-         List below are some of my products
+         Listed below are some of my products
         {/* </span> */}
         </div>
           <Project/>
