@@ -73,7 +73,7 @@ export default function Homepage(){
                 /~ Products available for Android, Fire OS, Windows, Linux, Mac, Web Android. ~/
                 </h1>*/}
                 <div className="w-full">
-                <div className="text-gray-900 sm:mb-8 leading-tighter tracking-tighter  px-4 text-2xl dark:text-white mb-10 text-center">
+                <div className="text-gray-900 sm:mb-8 leading-tighter tracking-tighter  px-4 text-2xl dark:text-white m-10 text-center">
                 {/* Our products have featured on most media outlets around the world, in most languages.  */}
                 Shipping Software since 2018. Powering 15M+ sessions Worldwide.
                 {/* <Textspin text={TEXTS} direction={'up'} interval={1500}/> */}

@@ -38,7 +38,7 @@ export default function Page() {
       <>
       {/* <ThemeProvider> */}
       {/* <div className={dark ? 'dark' : ''}> */}
-      <AlertInfo/>
+      {/* <AlertInfo/> */}
       <div className="dark:bg-gray-900">
       
           <Homepage/>

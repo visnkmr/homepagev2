@@ -17,7 +17,7 @@ export default function storeslist({stores}:Storelist){
                     src={store.src}
                     alt={store.alt}
                     className="h-full object-contain"
-                    />):<Button className="bg-blue-600" variant={"outline"}>In House Appstore</Button>}
+                    />):<Button className="border-black dark:border-white" variant={"outline"}>In House Appstore</Button>}
                 </a>
             </div>
             ))}

@@ -4,7 +4,7 @@ export default function Footer() {
     return (
       <>
         <footer className="bg-slate-800  text-white" >
-          <div className="grid place-items-center w-full p-20">
+          <div className="grid place-items-center text-center w-full p-20">
 
             <div className="text-2xl pt-8 grid md:grid-flow-col gap-y-8 gap-x-8">
             <div>
