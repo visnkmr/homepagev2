@@ -44,6 +44,25 @@ export default function Page() {
           <Homepage/>
           <span className='m-4'></span>
           {/* <Planglist/> */}
+          <div className='grid place-items-center w-full'>
+          <div className='grid place-items-center'>
+            <h1 className='text-center'>Who am i</h1>
+          </div>
+          <div className='grid place-items-center grid-cols-3 w-full'>
+            <div className='col-span-1'>
+              <h1>test</h1>
+            </div>
+            <div className='col-span-1'>
+              <h1>test</h1>
+            </div>
+            <div className='col-span-1'>
+              <h1>test</h1>
+            </div>
+
+          </div>
+          <h1>test</h1>
+          <h1>test</h1> 
+          </div>
           <Project/>
           <Ct/>
           <Commits/>

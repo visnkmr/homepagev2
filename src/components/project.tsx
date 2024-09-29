@@ -30,7 +30,7 @@ export default function Project() {
       {appsfetcher()}
       
       </div>
-      <p className="w-full text-center m-5 italic text-xs">Download counts last updated in Dec 2022.</p>
+      {/* <p className="w-full text-center m-5 italic text-xs">Download counts last updated in Dec 2022.</p> */}
       </>
     );
   }
