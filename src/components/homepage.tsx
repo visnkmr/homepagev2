@@ -80,9 +80,24 @@ export default function Homepage(){
                 </div>
                 <div className="flex justify-center pb-10">
                 <div className="flex flex-col place-items-center gap-4 sm:flex-row">
-
+                <a 
+                className="btn btn-primary sm:mb-0" 
+                href="https://github.com/visnkmr"
+                rel="noopener" 
+                target="_blank">
+                    <Button className="border-black dark:border-white" variant={"outline"}>Github</Button>
+                </a>
                     <Stores {...stores} />
-                    <Button variant={"outline"} className='hidden sm:block' onClick={()=>{
+                    
+                    <a 
+                className="btn btn-primary sm:mb-0" 
+                href="https://visnkmr.github.io/appstore"
+                rel="noopener" 
+                target="_blank">
+                        <Button className="border-black dark:border-white" variant={"outline"}>In House Appstore</Button>
+                    </a>
+
+                    <Button className="border-black dark:border-white hidden sm:block"  variant={"outline"} onClick={()=>{
                         setsb((e)=>!e)
                     }}>Show catalog</Button>
                 </div>

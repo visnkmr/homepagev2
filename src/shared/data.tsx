@@ -2,18 +2,18 @@ import { Storelist, review } from "./types";
 
 export const stores: Storelist = {
     stores: [
-      {
-        name:'Appstore',
-        link: 'https://visnkmr.github.io/appstore',
-        src: '',
-        alt: 'My appstore',
-      },
-      {
-        name: 'Github',
-        link: 'https://github.com/visnkmr',
-        src: "https://raw.githubusercontent.com/visnkmr/.github/dee2748a4392c7c5f034d062345a02cf01b6fbb4/sogh.svg",
-        alt: 'Github',
-      },
+      // {
+      //   name:'Appstore',
+      //   link: 'https://visnkmr.github.io/appstore',
+      //   src: '',
+      //   alt: 'My appstore',
+      // },
+      // {
+      //   name: 'Github',
+      //   link: 'https://github.com/visnkmr',
+      //   src: "https://raw.githubusercontent.com/visnkmr/.github/dee2748a4392c7c5f034d062345a02cf01b6fbb4/sogh.svg",
+      //   alt: 'Github',
+      // },
       {
         name:'Amazon Appstore',
         link: 'https://www.amazon.com/gp/mas/dl/android?p=io.github.visnkmr.bapl&showAll=1',
