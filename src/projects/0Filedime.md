@@ -4,8 +4,8 @@ title: 'Filedime'
 downloadurl: https://github.com/visnkmr/filedime/releases/latest
 description: 'The rust based file explorer for PC.'
 download: ''
+image: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/filedime.webp'
 excerpt: 'Open Source'
-image: 'fx'
 tags: [pc,gh,win,lx,mos]
 oss: t
 ---

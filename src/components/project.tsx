@@ -26,7 +26,7 @@ export default function Project() {
     // const [scroll, setScroll] = useState(false);
     return (
       <>
-      <div className="grid sm:grid-cols-2 xl:grid-cols-3 dark:bg-gray-900 dark:text-white">
+      <div className="grid grid-cols-1 dark:bg-gray-900 dark:text-white">
       {appsfetcher()}
       
       </div>
