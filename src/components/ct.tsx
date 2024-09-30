@@ -8,15 +8,15 @@ export default function Ct(){
     return (
         <>
         <div className="block dark:bg-gray-900 dark:text-white">
-        <div className="text-center md:mb-0 ">
-          <div className="font-bold font-heading text-4xl lg:text-5xl text-[#039de1] xl:text-6xl">
+        {/* <div className="text-center md:mb-0 ">
+          <div className="font-bold font-heading text-4xl lg:text-5xl text-[#039de1] xl:text-6xl"> */}
             {/* <noscript> */}
-              150k+
+              {/* 150k+ */}
               {/* </noscript> */}
               {/* <CountUp enableScrollSpy end={150000}/>+ */}
-            </div>
-          <p className="text-sm dark:text-slate-400 font-medium lg:text-base text-gray-800 tracking-widest uppercase">Reviews</p>
-        </div>
+            {/* </div> */}
+          {/* <p className="text-sm dark:text-slate-400 font-medium lg:text-base text-gray-800 tracking-widest uppercase">Reviews</p>
+        </div> */}
         {/* <div className="mx-5 h-12 w-1 dark:border-slate-200 ">
 
         </div>
