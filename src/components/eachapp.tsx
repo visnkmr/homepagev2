@@ -35,7 +35,7 @@ export default function Eachapp({app}){
     // onMouseEnter={onMouseEnter}
     // onMouseLeave={onMouseLeave}
     className="grid place-items-center grid-cols-1 dark:bg-gray-900 dark:text-white rounded-2xl mb-8  "> 
-    <div className="hidden md:block container mx-auto px-4 py-8 max-w-[40%] ">
+    <div className="hidden lg:block container mx-auto px-4 py-8 max-w-[40%] ">
       <div className="grid grid-cols-2 items-center mb-28 ">
         <div className="space-y-4 items-center  max-w-[70%]">
           <h2 className="text-3xl font-bold">{app.title}</h2>
@@ -50,7 +50,7 @@ export default function Eachapp({app}){
         </div>
       </div>
       </div>
-      <div className="md:hidden container mx-auto px-4 py-8 max-w-[60%] ">
+      <div className="lg:hidden container mx-auto px-4 py-8 max-w-[60%] ">
       <div className=" mb-28 grid place-items-center w-full ">
       <div className="mb-5 ">
         <Llimage url={app.image}/>
