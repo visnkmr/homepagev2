@@ -43,10 +43,10 @@ export default function Commits() {
         {/* <div className='text-center font-bold mb-5 leading-tighter tracking-tight md:px-0 md:text-[2.48rem] px-4 text-5xl m-15'>Products</div> */}
         <p className=" dark:text-white text-xl mb-8 text-center">
             {/* Our products have featured on most media outlets around the world, in most languages.  */}
-            <noscript>
             Recent commits from local Gitea instance, Codeberg.
+            {/* <noscript>
             </noscript>
-            Recent Commits from <Textspin text={TEXTS} direction={"down"} interval={1000}/>
+            Recent Commits from <Textspin text={TEXTS} direction={"down"} interval={1000}/> */}
             {/* <br/>
             Except private repos other repo mirrors available on Github. */}
             </p>

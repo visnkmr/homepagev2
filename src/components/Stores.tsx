@@ -7,7 +7,7 @@ export default function storeslist({stores}:Storelist){
        
 
         {stores.map((store) => (
-            <div className="pr-4 h-12 sm:h-10">
+            <div className="md:pr-4 h-12 sm:h-10">
                 <a 
                 className="btn btn-primary sm:mb-0" 
                 href={store.link} 
@@ -17,7 +17,7 @@ export default function storeslist({stores}:Storelist){
                     src={store.src}
                     alt={store.alt}
                     className="h-full object-contain"
-                    />):<Button className="bg-blue-600" variant={"outline"}>In House Appstore</Button>}
+                    />):null}
                 </a>
             </div>
             ))}

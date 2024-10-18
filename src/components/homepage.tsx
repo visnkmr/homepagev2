@@ -73,16 +73,31 @@ export default function Homepage(){
                 /~ Products available for Android, Fire OS, Windows, Linux, Mac, Web Android. ~/
                 </h1>*/}
                 <div className="w-full">
-                <div className="text-gray-900 sm:mb-8 leading-tighter tracking-tighter  px-4 text-2xl dark:text-white mb-10 text-center">
+                <div className="text-gray-900 sm:mb-8 leading-tighter tracking-tighter  px-4 text-2xl dark:text-white m-10 text-center">
                 {/* Our products have featured on most media outlets around the world, in most languages.  */}
                 Shipping Software since 2018. Powering 15M+ sessions Worldwide.
                 {/* <Textspin text={TEXTS} direction={'up'} interval={1500}/> */}
                 </div>
                 <div className="flex justify-center pb-10">
                 <div className="flex flex-col place-items-center gap-4 sm:flex-row">
-
+                <a 
+                className="btn btn-primary sm:mb-0" 
+                href="https://github.com/visnkmr"
+                rel="noopener" 
+                target="_blank">
+                    <Button className="border-black dark:border-white" variant={"outline"}>Github</Button>
+                </a>
                     <Stores {...stores} />
-                    <Button variant={"outline"} className='hidden sm:block' onClick={()=>{
+                    
+                    <a 
+                className="btn btn-primary sm:mb-0" 
+                href="https://visnkmr.github.io/appstore"
+                rel="noopener" 
+                target="_blank">
+                        <Button className="border-black dark:border-white" variant={"outline"}>In House Appstore</Button>
+                    </a>
+
+                    <Button className="border-black dark:border-white hidden sm:block"  variant={"outline"} onClick={()=>{
                         setsb((e)=>!e)
                     }}>Show catalog</Button>
                 </div>
