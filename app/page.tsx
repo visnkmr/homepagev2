@@ -44,7 +44,7 @@ export default function Page() {
           <Homepage/>
           <span className='m-4'></span>
           {/* <Planglist/> */}
-          <div className='grid place-items-center w-full'>
+          {/* <div className='grid place-items-center w-full'>
             <div className='container p-10'>
 
           <div className='grid grid-cols-3 w-full pb-5'>
@@ -65,7 +65,7 @@ export default function Page() {
             </div>
           </div>
             </div>
-          </div>
+          </div> */}
           <Ct/>
           <div className="items-center leading-tighter tracking-tight  text-center font-bold text-4xl p-10 pb-18">
         {/* <span className="bg-gray-300"> */}
