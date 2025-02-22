@@ -4,7 +4,6 @@ title: 'Weblinklist'
 description: ''
 excerpt: ''
 download: ''
-image: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images'
 tags: [gh]
 oss: t
 indev: t
