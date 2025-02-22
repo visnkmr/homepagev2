@@ -8,9 +8,17 @@ import { Download } from "lucide-react/";
 import Llimage from "./llimage";
 import { useEffect, useState } from "react";
 import { Button } from "../../components/ui/button";
+import Aas from "../stores/aas";
+import Gp from "../stores/gp";
 
 export default function Eachapp({app}){
+  var showaas,showgps,showmas,showgh
     const [show,setshow]=useState(false)
+    var tags=app.tags
+    showaas = tags.includes('aas'); 
+         showgps = tags.includes('gp'); 
+         showmas = tags.includes('ms'); 
+         showgh = tags.includes('gh');
     // const [isHovering, setIsHovered] = useState(false);
 //   const onMouseEnter = () => setIsHovered(true);
 //   const onMouseLeave = () => setIsHovered(false);
@@ -41,7 +49,7 @@ export default function Eachapp({app}){
           <p className="text-xl text-white-600">
             {app.content}
           </p>
-          
+          <Button disabled className=" border-black dark:border-white" variant={"outline"}>Proprietary</Button>
         </div>)}
         {app.image && (
         <div className="hidden lg:block container mx-auto px-4 py-8 max-w-[40%] ">
@@ -51,8 +59,31 @@ export default function Eachapp({app}){
           <p className="text-xl text-white-600">
             {app.content}
           </p>
-          {app.url && (<div className="pt-4">
-
+          {/* <span> */}
+          <p>{tags}</p>
+          <div className="grid grid-cols-1 space-y-4">
+          {showaas && (
+      <Aas/>
+      )} 
+      {showgps && (
+      <Gp/>
+      )} 
+      {/* {showmas && (
+      <Mas/>
+      )}  */}
+      {showgh && (
+      // <span className="">
+        <a
+        href="https://github.com/visnkmr" 
+        rel="noopener" 
+        target="_blank">
+          <Button className="border-black dark:border-white " variant={"outline"}>Github</Button>
+        </a>
+      // </span>
+      )}
+          {/* </span> */}
+          {app.url && (
+         
           <a 
                 className="btn btn-primary sm:mb-0 "  
                 href={app.url}
@@ -60,7 +91,8 @@ export default function Eachapp({app}){
                 target="_blank">
                     <Button className="border-black dark:border-white " variant={"outline"}>Checkout {app.title}</Button>
                 </a>
-          </div>)}
+          )}
+          </div>
           {app.image && (<div className="space-x-4">
           </div> )}
         </div>
@@ -82,6 +114,38 @@ export default function Eachapp({app}){
           <p className="text-xl text-white-600 text-center">
             {app.content}
           </p>
+          <div className="place-items-center grid grid-cols-1 space-y-4">
+          {showaas && (
+      <Aas/>
+      )} 
+      {showgps && (
+      <Gp/>
+      )} 
+      {/* {showmas && (
+      <Mas/>
+      )}  */}
+      {showgh && (
+      // <span className="">
+        <a
+        href="https://github.com/visnkmr" 
+        rel="noopener" 
+        target="_blank">
+          <Button className="border-black dark:border-white " variant={"outline"}>Github</Button>
+        </a>
+      // </span>
+      )}
+          {/* </span> */}
+          {app.url && (
+         
+          <a 
+                className="btn btn-primary sm:mb-0 "  
+                href={app.url}
+                rel="noopener" 
+                target="_blank">
+                    <Button className="border-black dark:border-white " variant={"outline"}>Checkout {app.title}</Button>
+                </a>
+          )}
+          </div>
         </div>
         
       </div>
