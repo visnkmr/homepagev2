@@ -60,7 +60,7 @@ export default function Eachapp({app}){
             {app.content}
           </p>
           {/* <span> */}
-          <p>{tags}</p>
+          {/* <p>{tags}</p> */}
           <div className="grid grid-cols-1 space-y-4">
           {showaas && (
       <Aas/>
