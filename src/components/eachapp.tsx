@@ -10,8 +10,10 @@ import { useEffect, useState } from "react";
 import { Button } from "../../components/ui/button";
 import Aas from "../stores/aas";
 import Gp from "../stores/gp";
+import {Badge} from "../../components/ui/badge"
 
 export default function Eachapp({app}){
+  console.log(app)
   var showaas,showgps,showmas,showgh
     const [show,setshow]=useState(false)
     var tags=app.tags
@@ -42,20 +44,33 @@ export default function Eachapp({app}){
     //     return !old
     // })} 
     // onMouseEnter={onMouseEnter}
-    // onMouseLeave={onMouseLeave}
+    // onMouseLeave={onMouseLex ave}
     className="grid place-items-center grid-cols-1 dark:bg-gray-900 dark:text-white rounded-2xl mb-8  "> 
-    {!app.image && (<div className="space-y-4 items-center  max-w-[40%] pb-36">
+    {!app.image &&  (<div className="space-y-4 items-center  max-w-[40%] pb-36">
+      <div className="flex flex-col ">
           <h2 className="text-3xl font-bold">{app.title}</h2>
+          {app.oss=="t"?<Badge className="w-fit" variant="secondary">Open Source</Badge>:null}
+          </div>
           <p className="text-xl text-white-600">
             {app.content}
           </p>
-          <Button disabled className=" border-black dark:border-white" variant={"outline"}>Proprietary</Button>
+          {app.oss=="f"?(<Button disabled className=" border-black dark:border-white" variant={"outline"}>Proprietary</Button>):<div className="grid grid-cols-1 space-y-4"><a
+        href={`https://github.com/visnkmr/${app.reponame}`} 
+        rel="noopener" 
+        target="_blank">
+          <Button className="border-black dark:border-white " variant={"outline"}>Github</Button>
+        </a></div>}
         </div>)}
+        {/* for pc and tabs */}
         {app.image && (
         <div className="hidden lg:block container mx-auto px-4 py-8 max-w-[40%] ">
       <div className="grid grid-cols-2 items-center mb-20 ">
-        <div className="space-y-4 items-center  max-w-[70%]">
+        <div className="space-y-2 items-center  max-w-[70%]">
+          <div className="flex flex-col">
           <h2 className="text-3xl font-bold">{app.title}</h2>
+          {app.oss=="t"?<Badge className="w-fit mb-3" variant="secondary">Open Source</Badge>:null}
+          {app.download?<Badge className="w-fit" variant="default">{app.download}</Badge>:null}
+          </div>
           <p className="text-xl text-white-600">
             {app.content}
           </p>
@@ -74,10 +89,10 @@ export default function Eachapp({app}){
       {showgh && (
       // <span className="">
         <a
-        href={`https://github.com/visnkmr/${app.reponame}`} 
+        href={`${app.oss=="f"?`https://github.com/visnkmr/${app.reponame}/issues`:`https://github.com/visnkmr/${app.reponame}`}`} 
         rel="noopener" 
         target="_blank">
-          <Button className="border-black dark:border-white " variant={"outline"}>Github</Button>
+          <Button className="border-black dark:border-white " variant={"outline"}>{`${app.oss=="f"?"Report Issue":"Github"}`}</Button>
         </a>
       // </span>
       )}
@@ -103,6 +118,7 @@ export default function Eachapp({app}){
       </div>
       </div>
     )} 
+    {/* for mob */}
       {app.image && (
       <div className="lg:hidden container mx-auto px-4 py-8 max-w-[60%] ">
       <div className=" mb-28 grid place-items-center w-full ">
@@ -110,7 +126,10 @@ export default function Eachapp({app}){
         <Llimage url={app.image}/>
         </div>
         <div className="space-y-4 items-center">
-          <h2 className="text-3xl font-bold text-center">{app.title}</h2>
+        <div className="flex flex-col ">
+          <h2 className="text-3xl font-bold">{app.title}</h2>
+          {app.oss=="t"?<Badge className="w-fit" variant="secondary">Open Source</Badge>:null}
+          </div>
           <p className="text-xl text-white-600 text-center">
             {app.content}
           </p>
@@ -127,10 +146,10 @@ export default function Eachapp({app}){
       {showgh && (
       // <span className="">
         <a
-        href="https://github.com/visnkmr" 
+        href={`${app.oss=="f"?`https://github.com/visnkmr/${app.reponame}/issues`:`https://github.com/visnkmr/${app.reponame}`}`} 
         rel="noopener" 
         target="_blank">
-          <Button className="border-black dark:border-white " variant={"outline"}>Github</Button>
+          <Button className="border-black dark:border-white " variant={"outline"}>{`${app.oss=="f"?"Report Issue":"Github"}`}</Button>
         </a>
       // </span>
       )}

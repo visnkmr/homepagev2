@@ -6,7 +6,7 @@ download: '5m+ '
 excerpt: ''
 image: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/bapl.webp'
 reponame: 'backgroundappslist'
-
+oss: f
 tags: [aas, gp, ms, gh]
 ---
 

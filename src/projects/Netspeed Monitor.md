@@ -11,4 +11,4 @@ techused: [sse,http,tauri,rust,tkinter,python,tcl,serde,chrono,prefstore,json,ti
 reponame: 'netspeed_pc'
 ---
 
-Monitor live bandwidth usage/ network speed on PC. 
+Monitor live bandwidth usage/ network speed on PC (OSS) and smartphones (not OSS). 

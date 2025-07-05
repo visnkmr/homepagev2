@@ -10,6 +10,10 @@
     "app/*.tsx",
     ".next/types/**/*.ts" ],
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    },
     // "typeRoots": [
     //   "./node_modules/@types",
     //   "./typings"

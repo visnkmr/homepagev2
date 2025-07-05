@@ -5,6 +5,7 @@ description: 'A simple, High Performance file explorer built in rust for PC.'
 excerpt: 'Open Source'
 download: ''
 tags: [gh]
+reponame: 'prefstore'
 oss: t
 ---
 
