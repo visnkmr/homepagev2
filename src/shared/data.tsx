@@ -80,6 +80,7 @@ export const stores: Storelist = {
   export const apab = new Map<string, string>([
     ['bapl', 'Background Apps and Process List'],
     ['fx', 'File Explorer'],
-    ['wfm', 'Wireless File Manager']
+    ['wfm', 'Wireless File Manager'],
+    ['appinfomanager', 'App Info Manager'],
   ]);
   

@@ -74,7 +74,7 @@ export default function Eachapp({app}){
       {showgh && (
       // <span className="">
         <a
-        href="https://github.com/visnkmr" 
+        href={`https://github.com/visnkmr/${app.reponame}`} 
         rel="noopener" 
         target="_blank">
           <Button className="border-black dark:border-white " variant={"outline"}>Github</Button>
@@ -82,16 +82,16 @@ export default function Eachapp({app}){
       // </span>
       )}
           {/* </span> */}
-          {app.url && (
+          {/* {app.reponame && (
          
           <a 
                 className="btn btn-primary sm:mb-0 "  
-                href={app.url}
+                href={`https://github.com/visnkmr/${app.reponame}`}
                 rel="noopener" 
                 target="_blank">
                     <Button className="border-black dark:border-white " variant={"outline"}>Checkout {app.title}</Button>
                 </a>
-          )}
+          )} */}
           </div>
           {app.image && (<div className="space-x-4">
           </div> )}

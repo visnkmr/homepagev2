@@ -7,5 +7,7 @@ download: '2.5m+ '
 image: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/nst.webp'
 tags: [aas,mas,gp,gh]
 oss: f
+reponame: 'netspeed-test'
+
 ---
 In addition to being your usual netspeed tester includes a tool to identify whether ISP is throttling data speeds for specific apps on your android. Encourages users to use the multi window option that is now widely available on android to monitor active network speed in use.

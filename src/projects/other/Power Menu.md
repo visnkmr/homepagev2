@@ -5,6 +5,8 @@ description: 'A Simple, secure root less accessibility based software power menu
 download: '500k+ '
 image: 'https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images'
 tags: [gp,gh]
+oss: f
+reponame: 'powermenu'
 ---
 
 A Simple, secure software power menu for android. No root needed, uses Accessibility permission.
