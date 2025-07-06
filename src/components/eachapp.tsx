@@ -121,19 +121,19 @@ export default function Eachapp({app}){
     {/* for mob */}
       {app.image && (
       <div className="lg:hidden container mx-auto px-4 py-8 max-w-[60%] ">
-      <div className=" mb-28 grid place-items-center w-full ">
+      <div className=" mb-28 grid w-full ">
       <div className="mb-5 ">
         <Llimage url={app.image}/>
         </div>
-        <div className="space-y-4 items-center">
+        <div className="space-y-4">
         <div className="flex flex-col ">
           <h2 className="text-3xl font-bold">{app.title}</h2>
           {app.oss=="t"?<Badge className="w-fit" variant="secondary">Open Source</Badge>:null}
           </div>
-          <p className="text-xl text-white-600 text-center">
+          <p className="text-xl text-white-600">
             {app.content}
           </p>
-          <div className="place-items-center grid grid-cols-1 space-y-4">
+          <div className="grid grid-cols-1 space-y-4">
           {showaas && (
       <Aas/>
       )} 
