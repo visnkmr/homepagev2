@@ -112,7 +112,7 @@ export default function Eachapp({app}){
           </div> )}
         </div>
         {app.image && ( <div className="grid place-items-center w-full ">
-        <Llimage url={app.image}/>
+        <Llimage url={`https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/${app.image}.webp`}/>
         </div>
           )}
       </div>

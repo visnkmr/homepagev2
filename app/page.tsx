@@ -1,8 +1,9 @@
-// 'use client'
+'use client'
 import dynamic from 'next/dynamic'
 
 // import Project from "../src/components/project";
 const Project =dynamic(()=>import ("../src/components/project"));
+const GridProj =dynamic(()=>import ("../src/components/gridproj"));
 
 import Homepage from "../src/components/homepage";
 // import Planglist from "../src/components/planlist";
@@ -20,6 +21,8 @@ import DarkButton from "./but";
 import Mq from "../src/components/mq";
 import Contactme from "../src/components/contactme";
 import AlertInfo from './Alertinfo';
+import { useState } from 'react';
+// import { useState } from 'react';
 // import { ThemeContext, ThemeProvider } from "../src/components/ThemeContext";
 // import { useContext } from "react";
 // import { createServerContext } from 'react';
@@ -28,6 +31,8 @@ import AlertInfo from './Alertinfo';
 // import gtr from "./api/gtr";
 
 export default function Page() {
+  const [apps,setapps]=useState();
+  // const[isexpanded,setexpanded]=useState(false)
   // console.log("hello world")
   // console.log(JSON.parse(gtr()))
   // console.log(dwc())
@@ -66,12 +71,15 @@ export default function Page() {
           </div>
             </div>
           </div> */}
+          <GridProj/>
+
           <Ct/>
           <div className="items-center leading-tighter tracking-tight  text-center font-bold text-4xl p-10 pb-18">
         {/* <span className="bg-gray-300"> */}
          Listed below are some of my products
         {/* </span> */}
         </div>
+
           <Project/>
           
           <Commits/>

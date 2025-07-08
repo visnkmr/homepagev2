@@ -78,7 +78,7 @@ export default function Homepage(){
                 Shipping Software since 2018. Powering 15M+ sessions Worldwide.
                 {/* <Textspin text={TEXTS} direction={'up'} interval={1500}/> */}
                 </div>
-                <div className="flex justify-center pb-10">
+                <div className="flex justify-center">
                 <div className="flex flex-col place-items-center gap-4 sm:flex-row">
                 <a 
                 className="btn btn-primary sm:mb-0" 

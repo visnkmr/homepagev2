@@ -1,69 +1,69 @@
-import fs from 'fs';
-import matter from 'gray-matter';
-import { join } from 'path';
+// import fs from 'fs/promises';
+// import matter from 'gray-matter';
+// import { join } from 'path';
+
+import { cache } from "react";
 
 // const BLOG_DIR = join(process.cwd(), 'src/content/blog');
 // console.log(BLOG_DIR)
 
 
 
-const load = (fromwhere:string) => {
+// const load = async (fromwhere:string) => {
 
-  console.log(fromwhere)
-  var loctr=join(join(process.cwd(), 'src'),fromwhere);
-  console.log(loctr)
-  const files = fs.readdirSync(loctr);
-  // console.log(files)
-  const apps = Promise.all(
-    files
-      .filter((filename) => filename.endsWith('.md'))
-      .map(async (filename) => {
-        const slug = filename.replace('.md', '');
-        return await findPostBySlug(fromwhere,slug);
-      }),
-  );
+//   console.log(fromwhere)
+//   var loctr=join(join(process.cwd(), 'src'),fromwhere);
+//   console.log(loctr)
+//   const files = await fs.readdir(loctr);
+//   // console.log(files)
+//   const apps = Promise.all(
+//     files
+//       .filter((filename) => filename.endsWith('.md'))
+//       .map(async (filename) => {
+//         const slug = filename.replace('.md', '');
+//         return await findPostBySlug(fromwhere,slug);
+//       }),
+//   );
 
-  return apps;
-};
+//   return apps;
+// };
 
-
-/** */
-export const fetchapps = async (fromwhere:string) => {
-  // console.log(fromwhere)
-  let _apps:any;
-  _apps = _apps || load(fromwhere);
-  // console.log(fromwhere)
-
-  return await _apps;
-};
 
 /** */
-export const findLatestapps= async (fromwhere:string)=> {
-  // console.log(fromwhere)
-  // const _count =  4;
-  const apps = await fetchapps(fromwhere);
+// export const fetchapps = async (fromwhere:string) => {
+//   // console.log(fromwhere)
+//   let _apps:any;
+//   _apps = _apps || await load(fromwhere);
+//   // console.log(fromwhere)
 
-  return apps;
-  // return apps ? apps.slice(_count * -1) : [];
+//   return await _apps;
+// };
+
+/** */
+export const findLatestapps = async (fromwhere: string) => {
+  let appsfetched = await fetch("https://cdn.jsdelivr.net/gh/visnkmr/appstore@main/list.json",{cache:"no-cache"});
+  let tofindapps = ["filedime", "backgroundappslist", "batu", "netspeed-test", "wfm", "weblinklist", "file_explorer", "LogLink2Disk_chrome", "netspeed", "nokeyboard", "perlink", "taotlus", "calculator", "prefstore"];
+  let appsData = await appsfetched.json();
+  return appsData.filter((e: any) => tofindapps.includes(e.reponame));
 };
 
 /** */
-export const findPostBySlug = async (fromwhere:string,slug:any) => {
-  if (!slug) return null;
+// export const findPostBySlug = async (fromwhere:string,slug:any) => {
+//   if (!slug) return null;
 
-  try {
-    const readFile = fs.readFileSync(join(process.cwd(),"src",fromwhere, `${slug}.md`), 'utf-8');
-    // const matter = (await import('gray-matter')).default
-    const { data: frontmatter, content } = matter(readFile);
-    return {
-      slug,
-      ...frontmatter,
-      content,
-    };
-  } catch (e) {}
+//   try {
+//     const readFile = await fs.readFile(join(process.cwd(),"src",fromwhere, `${slug}.md`), 'utf-8');
+//     // const matter = (await import('gray-matter')).default
+//     const { data: frontmatter, content } = matter(readFile);
+//     return {
+//       slug,
+//       ...frontmatter,
+//       content,
+//     };
+//   } catch (e) {}
 
-  return null;
-};
+//   return null;
+// };
 
 /** */
 // export const findappsByIds = async (ids) => {
