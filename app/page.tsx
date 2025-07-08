@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import dynamic from 'next/dynamic'
 
 // import Project from "../src/components/project";
@@ -21,8 +21,6 @@ import DarkButton from "./but";
 import Mq from "../src/components/mq";
 import Contactme from "../src/components/contactme";
 import AlertInfo from './Alertinfo';
-import { useState } from 'react';
-// import { useState } from 'react';
 // import { ThemeContext, ThemeProvider } from "../src/components/ThemeContext";
 // import { useContext } from "react";
 // import { createServerContext } from 'react';
@@ -31,7 +29,7 @@ import { useState } from 'react';
 // import gtr from "./api/gtr";
 
 export default function Page() {
-  const [apps,setapps]=useState();
+  // const [apps,setapps]=useState();
   // const[isexpanded,setexpanded]=useState(false)
   // console.log("hello world")
   // console.log(JSON.parse(gtr()))
