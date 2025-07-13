@@ -2,8 +2,6 @@
 // import matter from 'gray-matter';
 // import { join } from 'path';
 
-import { cache } from "react";
-
 // const BLOG_DIR = join(process.cwd(), 'src/content/blog');
 // console.log(BLOG_DIR)
 
@@ -41,7 +39,7 @@ import { cache } from "react";
 
 /** */
 export const findLatestapps = async (fromwhere: string) => {
-  let appsfetched = await fetch("https://cdn.jsdelivr.net/gh/visnkmr/appstore@main/list.json");
+  let appsfetched = await fetch("https://cdn.jsdelivr.net/gh/visnkmr/appstore@main/list.json",{cache:"no-cache"});
   let tofindapps = ["filedime", "backgroundappslist", "batu", "netspeed-test", "wfm", "weblinklist", "file_explorer", "LogLink2Disk_chrome", "netspeed", "nokeyboard", "perlink", "taotlus", "calculator", "prefstore"];
   let appsData = await appsfetched.json();
   return appsData.filter((e: any) => tofindapps.includes(e.reponame));
