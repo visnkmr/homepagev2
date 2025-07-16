@@ -123,7 +123,7 @@ export default function Eachapp({app}){
       <div className="lg:hidden container mx-auto px-4 py-8 max-w-[60%] ">
       <div className=" mb-28 grid w-full ">
       <div className="mb-5 ">
-        <Llimage url={app.image}/>
+        <Llimage url={`https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/${app.image}.webp`}/>
         </div>
         <div className="space-y-4">
         <div className="flex flex-col ">

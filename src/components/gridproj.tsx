@@ -33,14 +33,14 @@ export function indiotherproj(app){
 
         <div 
         key={`${app.title}`} 
-        className="flex ">             
+        className="flex lg:max-w-full lg:ms-0 lg:mx-0 max-w-[70%] ms-5 mx-auto">             
         
           {/* <div className="w-120 p-4">
               <img
               src={image}
               className="w-120 "/>
           </div> */}
-          <div className="w-full hover:border-gray-950 dark:hover:border-slate-200 border-2 border-transparent">
+          <div className="overflow-hidden hover:border-gray-950 dark:hover:border-slate-200 border-2 border-transparent">
             <div className="p-2">
           <div> {/* <Link> */}
           {/* <div className="flex justify-center m-4">
@@ -53,7 +53,7 @@ export function indiotherproj(app){
              <div className="overflow-hidden"> */}
              {/* https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/ */}
             <div className="flex m-4">
-      <div className="overflow-hidden relative ">
+      <div className="overflow-hidden flex ">
         {/* {
           version && version.length>0? <Badge className="absolute top-2 right-2 z-10 bg-black ">
           {version}
@@ -144,7 +144,7 @@ export default function GridProj() {
     // const [scroll, setScroll] = useState(false);
     return (
       <>
-      <div className="box dark:bg-gray-900 dark:text-white ms-20 mr-20 ">
+      <div className="box dark:bg-gray-900 dark:text-white lg:ms-20 lg:mr-20 ">
       {appsfetcher()}
       
       </div>
