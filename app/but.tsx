@@ -56,13 +56,13 @@ export default function DarkButton() {
     <>
     
     <div className='dark:bg-gray-900 h-10'>
-    <span className='p-2.5 absolute right-0'>
-
+    {/* Fixed theme toggle button */}
+    <div className='fixed top-4 right-4 z-50'>
       <button
         id="theme-toggle"
         type="button"
         aria-label='light dark mode toggle'
-        className="text-gray-500  rounded-lg text-sm p-2.5"
+        className="text-gray-500 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg text-sm p-2.5 shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
         onClick={()=>setTheme(theme === 'light' ? 'dark' : 'light')}
       >
         <svg
@@ -86,11 +86,11 @@ export default function DarkButton() {
           ></path>
         </svg>
       </button>
-      </span>
-<span className='p-2.5 absolute left-0 z-10'>
+    </div>
 
-                    <img alt="image of Vishnu N K" className="topimg rounded-full w-9 sm:w-20" src="https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/profpic.webp" />
-</span>
+    <span className='p-2.5 absolute left-0 z-10'>
+      <img alt="image of Vishnu N K" className="topimg rounded-full w-9 sm:w-20" src="https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/profpic.webp" />
+    </span>
     </div>
 
     </>

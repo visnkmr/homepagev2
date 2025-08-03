@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 import dynamic from 'next/dynamic'
 
 // import Project from "../src/components/project";
@@ -15,6 +15,7 @@ import '../styles/globals.css'
 const Ct =dynamic(()=>import ("../src/components/ct"));
 
 const Commits =dynamic(()=>import ("../src/components/commits"));
+const Issues =dynamic(()=>import ("../src/components/issues"));
 // import Commits from "../src/components/commits";
 import Topthread from "../src/components/topthread";
 import DarkButton from "./but";
@@ -80,7 +81,21 @@ export default function Page() {
 
           <Project/>
           
+          {/* Scroll to User Engagement Button */}
+          {/* <div className="flex w-full justify-center items-center py-8">
+            <button
+              onClick={() => document.getElementById('user-engagement')?.scrollIntoView({ behavior: 'smooth' })}
+              className="text-center shadow-indigo-500/50 shadow-[0_0_15px_rgba(0,0,0,0.2)] rounded-2xl mx-5 xl:mx-4 p-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium transition-all duration-300 hover:scale-105"
+            >
+              View Community Engagement →
+            </button>
+          </div> */}
+          
+          
+          <Issues/>
+          
           <Commits/>
+          
           {/* <Contactme/> */}
           {/* <p className="text-center flex justify-center italic">This page was made using NextJS, React and Tailwind.</p> */}
       </div>

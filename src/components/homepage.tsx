@@ -94,8 +94,16 @@ export default function Homepage(){
                 href="https://visnkmr.github.io/appstore"
                 rel="noopener" 
                 target="_blank">
-                        <Button className="border-black dark:border-white" variant={"outline"}>In House Appstore</Button>
+                        <Button className="border-black dark:border-white shadow-indigo-500/50 shadow-[0_0_15px_rgba(0,0,0,0.2)] bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-[length:200%_100%] animate-gradient-flow text-white transition-all duration-300 hover:scale-105" variant={"outline"}>In House Appstore</Button>
                     </a>
+
+                    <Button 
+                        className="border-black dark:border-white shadow-indigo-500/50 shadow-[0_0_15px_rgba(0,0,0,0.2)] bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white transition-all duration-300 hover:scale-105" 
+                        variant={"outline"} 
+                        onClick={() => document.getElementById('user-engagement')?.scrollIntoView({ behavior: 'smooth' })}
+                    >
+                        Community Engagement
+                    </Button>
 
                     <Button className="border-black dark:border-white hidden sm:block"  variant={"outline"} onClick={()=>{
                         setsb((e)=>!e)
