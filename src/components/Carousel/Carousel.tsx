@@ -17,6 +17,16 @@ export interface ICarouselProps {
   infiniteLoop?: boolean
 
   /**
+   * Is the carousel will be auto sliding
+   */
+  autoSlide?: boolean
+
+  /**
+   * Delay for auto sliding in milliseconds
+   */
+  autoSlideDelay?: number
+
+  /**
    * Render with indicator
    */
   withIndicator?: boolean
@@ -143,13 +153,14 @@ export interface ICarouselProps {
   ) => JSX.Element
 }
 
-const Carousel = ({
-  children, show, infiniteLoop, withIndicator,
-  renderPreviousButton, renderNextButton,
-  containerClassName, wrapperClassName, contentWrapperClassName, contentClassName,
-  containerProps, wrapperProps, contentWrapperProps, contentProps,
-  indicatorContainerClassName, indicatorContainerProps, indicatorClassNames,
-}: ICarouselProps): JSX.Element => {
+const Carousel = (props: ICarouselProps): JSX.Element => {
+  const {
+    children, show, infiniteLoop, withIndicator, autoSlide, autoSlideDelay,
+    renderPreviousButton, renderNextButton,
+    containerClassName, wrapperClassName, contentWrapperClassName, contentClassName,
+    containerProps, wrapperProps, contentWrapperProps, contentProps,
+    indicatorContainerClassName, indicatorContainerProps, indicatorClassNames,
+  } = props;
   const indicatorContainerRef = React.useRef<HTMLDivElement>(null)
 
   /**
@@ -212,6 +223,20 @@ const Carousel = ({
       setCurrentIndex(prevState => prevState + 1)
     }
   }
+
+  React.useEffect(() => {
+    if (autoSlide) {
+      const interval = setInterval(() => {
+        nextItem()
+      }, autoSlideDelay || 5000)
+
+      return () => {
+        if (interval) {
+          clearInterval(interval)
+        }
+      }
+    }
+  }, [autoSlide, autoSlideDelay, currentIndex])
 
   /**
    * Move backward to the previous item

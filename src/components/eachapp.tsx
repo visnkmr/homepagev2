@@ -1,6 +1,4 @@
-
-"use client"
-
+'use client'
 
 import StoreIcons from "./storeicons";
 import LineClamp from "./LineClamp";
@@ -11,40 +9,33 @@ import { Button } from "../../components/ui/button";
 import Aas from "../stores/aas";
 import Gp from "../stores/gp";
 import {Badge} from "../../components/ui/badge"
+import ImageCarousel from "./ImageCarousel"; // Import ImageCarousel
 
 export default function Eachapp({app}){
   console.log(app)
   var showaas,showgps,showmas,showgh
     const [show,setshow]=useState(false)
+    const [screenshots, setScreenshots] = useState([]); // Create state for screenshots
+
     var tags=app.tags
     showaas = tags.includes('aas'); 
          showgps = tags.includes('gp'); 
          showmas = tags.includes('ms'); 
          showgh = tags.includes('gh');
-    // const [isHovering, setIsHovered] = useState(false);
-//   const onMouseEnter = () => setIsHovered(true);
-//   const onMouseLeave = () => setIsHovered(false);
-//   useEffect(()=>{
-//     console.log("heelo")
-//   },[])
-  
-// useEffect(() => {
-//     if(isHovering){
-//       console.log("show");
-//       setshow(true);
-//     } else {
-//       console.log("hide");
-//       setshow(false);
-//     }
-//    }, [isHovering]); // Add isHovering as a dependency
+
+    useEffect(() => {
+      let screenshotUrls = [];
+      if (app.screenshot && app.screenshot.length > 0) {
+        screenshotUrls = app.screenshot.map(url => `https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/${url.replace(/\.tv$/, '.webp')}`);
+      } else if (app.image) {
+        screenshotUrls = [`https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/${app.image}.webp`];
+      }
+      setScreenshots(screenshotUrls);
+    }, [app]);
+
     return (
     <div 
     key={app.slug}
-    // onClick={()=>setshow((old)=>{
-    //     return !old
-    // })} 
-    // onMouseEnter={onMouseEnter}
-    // onMouseLeave={onMouseLex ave}
     className="grid place-items-center grid-cols-1 dark:bg-gray-900 dark:text-white rounded-2xl mb-8  "> 
     {!app.image &&  (<div className="space-y-4 items-center  max-w-[40%] pb-36">
       <div className="flex flex-col ">
@@ -74,8 +65,6 @@ export default function Eachapp({app}){
           <p className="text-xl text-white-600">
             {app.content}
           </p>
-          {/* <span> */}
-          {/* <p>{tags}</p> */}
           <div className="grid grid-cols-1 space-y-4">
           {showaas && (
       <Aas/>
@@ -83,36 +72,21 @@ export default function Eachapp({app}){
       {showgps && (
       <Gp/>
       )} 
-      {/* {showmas && (
-      <Mas/>
-      )}  */}
       {showgh && (
-      // <span className="">
         <a
         href={`${app.oss=="f"?`https://github.com/visnkmr/${app.reponame}/issues`:`https://github.com/visnkmr/${app.reponame}`}`} 
         rel="noopener" 
         target="_blank">
           <Button className="border-black dark:border-white " variant={"outline"}>{`${app.oss=="f"?"Report Issue":"Github"}`}</Button>
         </a>
-      // </span>
       )}
-          {/* </span> */}
-          {/* {app.reponame && (
-         
-          <a 
-                className="btn btn-primary sm:mb-0 "  
-                href={`https://github.com/visnkmr/${app.reponame}`}
-                rel="noopener" 
-                target="_blank">
-                    <Button className="border-black dark:border-white " variant={"outline"}>Checkout {app.title}</Button>
-                </a>
-          )} */}
           </div>
           {app.image && (<div className="space-x-4">
           </div> )}
         </div>
+        {/* display screenshots for each app */}
         {app.image && ( <div className="grid place-items-center w-full ">
-        <Llimage url={`https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/${app.image}.webp`}/>
+          <ImageCarousel imageUrls={screenshots} />
         </div>
           )}
       </div>
@@ -123,7 +97,7 @@ export default function Eachapp({app}){
       <div className="lg:hidden container mx-auto px-4 py-8 max-w-[60%] ">
       <div className=" mb-28 grid w-full ">
       <div className="mb-5 ">
-        <Llimage url={`https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/${app.image}.webp`}/>
+        <ImageCarousel imageUrls={screenshots} />
         </div>
         <div className="space-y-4">
         <div className="flex flex-col ">
@@ -140,20 +114,14 @@ export default function Eachapp({app}){
       {showgps && (
       <Gp/>
       )} 
-      {/* {showmas && (
-      <Mas/>
-      )}  */}
       {showgh && (
-      // <span className="">
         <a
         href={`${app.oss=="f"?`https://github.com/visnkmr/${app.reponame}/issues`:`https://github.com/visnkmr/${app.reponame}`}`} 
         rel="noopener" 
         target="_blank">
           <Button className="border-black dark:border-white " variant={"outline"}>{`${app.oss=="f"?"Report Issue":"Github"}`}</Button>
         </a>
-      // </span>
       )}
-          {/* </span> */}
           {app.url && (
          
           <a 
