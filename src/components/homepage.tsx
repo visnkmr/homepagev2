@@ -42,108 +42,93 @@ const TEXTS = [
 //     ];
 export default function Homepage(){
     const [showb,setsb]=useState(false)
-    // var randval="no";
-    // useEffect(() => {
-    //     if(showon()){
-    //         randval="ol"
-    //     }else{
-    //         randval="po"
-    //     }
-    //     // This function will run whenever the value of showon changes
-    //     console.log('showon has changed to', showon);
-    //   }, [showon]);
+
     return(
-        <>
-        
-        
-        <div className="dark:bg-gray-900">
-        <div className="mx-auto px-4 sm:px-6 md:flex justify-center">
-            <div className="block md:flex w-full">
-            {/* <div className="block md:flex lg:py-16 md:py-12 py-12 text-center"> */}
-            <div className="flex flex-col items-center md:pb-0 md:py-0 mx-auto w-full ">
-            <div className="flex flex-col sm:flex-row w-full">
+        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-slate-900 dark:to-gray-800">
+            {/* Hero Section */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+                <div className="text-center">
+                    {/* Main Headline */}
+                    <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6">
+                        <span className="block">Building the Future</span>
+                        <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                            One Line at a Time
+                        </span>
+                    </h1>
 
-                {/* <span className="flex"> */}
+                    {/* Subtitle */}
+                    <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+                        Platform-agnostic developer crafting exceptional experiences across Android, Fire OS, Windows, Linux, Mac, and Web.
+                        <span className="block mt-2 font-semibold text-indigo-600 dark:text-indigo-400">
+                            Shipping software since 2018. Powering 15M+ sessions worldwide.
+                        </span>
+                    </p>
 
-                {/* <div className="m-auto"> */}
-                {/*<h1 className="font-bold mb-4 font-heading leading-tighter tracking-tighter xl:px-0 xl:text-[3.48rem] px-4 text-2xl sm:text-5xl dark:text-white text-center">
-                    /~ <span className="hidden">Coding with Passion and Purpose.</span>  ~/
-                /~ Innovative software solutions crafted with expertise. ~/
-                /~ Building efficient and effective software for a better world ~/
-                /~ Products available for Android, Fire OS, Windows, Linux, Mac, Web Android. ~/
-                </h1>*/}
-                <div className="w-full">
-                <div className="text-gray-900 sm:mb-8 leading-tighter tracking-tighter  px-4 text-2xl dark:text-white m-10 text-center">
-                {/* Our products have featured on most media outlets around the world, in most languages.  */}
-                Shipping Software since 2018. Powering 15M+ sessions Worldwide.
-                {/* <Textspin text={TEXTS} direction={'up'} interval={1500}/> */}
+                    {/* CTA Buttons */}
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+                        <a
+                            href="https://github.com/visnkmr"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-gray-900 to-gray-700 dark:from-gray-800 dark:to-gray-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+                        >
+                            <span>View GitHub</span>
+                            <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                            </svg>
+                        </a>
+
+                        <a
+                            href="https://visnkmr.github.io/appstore"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 animate-pulse"
+                        >
+                            <span>Explore App Store</span>
+                            <div className="ml-2 flex space-x-1">
+                                <div className="w-2 h-2 bg-white rounded-full animate-bounce"></div>
+                                <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
+                                <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
+                            </div>
+                        </a>
+
+                        <button
+                            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+                            className="group relative inline-flex items-center px-8 py-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 border border-gray-200 dark:border-gray-700"
+                        >
+                            <span>View Projects</span>
+                            <svg className="ml-2 w-5 h-5 group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    {/* Store Links */}
+                    <div className="flex justify-center">
+                        <Stores {...stores} />
+                    </div>
                 </div>
-                <div className="flex justify-center">
-                <div className="flex flex-col place-items-center gap-4 sm:flex-row">
-                <a 
-                className="btn btn-primary sm:mb-0" 
-                href="https://github.com/visnkmr"
-                rel="noopener" 
-                target="_blank">
-                    <Button className="border-black dark:border-white" variant={"outline"}>Github</Button>
-                </a>
-                    <Stores {...stores} />
-                    
-                    <a 
-                className="btn btn-primary sm:mb-0" 
-                href="https://visnkmr.github.io/appstore"
-                rel="noopener" 
-                target="_blank">
-                        <Button className="border-black dark:border-white shadow-indigo-500/50 shadow-[0_0_15px_rgba(0,0,0,0.2)] bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-[length:200%_100%] animate-gradient-flow text-white transition-all duration-300 hover:scale-105" variant={"outline"}>In House Appstore</Button>
-                    </a>
-
-                    <Button 
-                        className="border-black dark:border-white shadow-indigo-500/50 shadow-[0_0_15px_rgba(0,0,0,0.2)] bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700 text-white transition-all duration-300 hover:scale-105" 
-                        variant={"outline"} 
-                        onClick={() => document.getElementById('user-engagement')?.scrollIntoView({ behavior: 'smooth' })}
-                    >
-                        Community Engagement
-                    </Button>
-
-                    <Button className="border-black dark:border-white hidden sm:block"  variant={"outline"} onClick={()=>{
-                        setsb((e)=>!e)
-                    }}>Show catalog</Button>
-                </div>
-                    
-                </div>
-                <h1 className="text-gray-900 sm:mb-8 text-center font-bold font-heading leading-tighter tracking-tighter xl:px-0 xl:text-[3.48rem] px-4 text-2xl sm:text-5xl dark:text-white "> 
-                   
-                </h1>
-                </div>
-                
-            
-
-                </div>
-                {/* </span> */}
-                {/* <span className="flex items-center justify-center">
-                    <img alt="image of Vishnu N K" className="rounded-full w-32 sm:w-96 " src="https://cdn.jsdelivr.net/gh/visnkmr/visnkmr.github.io@main/images/1654419210688.jpg"/>
-                </span> */}
-            {/* </div> */}
-
-            {/* <div className="sm:flex sm:flex-row"> */}
-            
-
-            {/* </div> */}
-            
-            
             </div>
-            
-            </div>
-            
-        </div>
-        {/* {recentprojs()} */}
-        {/* <Mq/> */}
-        {/* <Stats/> */}
-        <div className="flex place-content-center w-full">
 
-        {showb?(<><Caro/></>):null}
+            {/* Projects Preview Toggle */}
+            <div className="flex justify-center pb-16">
+                <button
+                    onClick={() => setsb(e => !e)}
+                    className="group relative inline-flex items-center px-6 py-3 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 font-medium rounded-full hover:bg-indigo-200 dark:hover:bg-indigo-900/50 transition-all duration-200"
+                >
+                    <span>{showb ? 'Hide' : 'Show'} Project Catalog</span>
+                    <svg className={`ml-2 w-4 h-4 transition-transform ${showb ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+            </div>
+
+            {/* Projects Carousel */}
+            {showb && (
+                <div className="pb-16">
+                    <Caro/>
+                </div>
+            )}
         </div>
-        </div>
-        </>
     );
 }

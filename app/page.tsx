@@ -30,79 +30,78 @@ import AlertInfo from './Alertinfo';
 // import gtr from "./api/gtr";
 
 export default function Page() {
-  // const [apps,setapps]=useState();
-  // const[isexpanded,setexpanded]=useState(false)
-  // console.log("hello world")
-  // console.log(JSON.parse(gtr()))
-  // console.log(dwc())
-  // console.log("hello")
-  // const { dark } = useContext(ThemeContext);
-
     return (
-      <>
-      {/* <ThemeProvider> */}
-      {/* <div className={dark ? 'dark' : ''}> */}
-      {/* <AlertInfo/> */}
-      <div className="dark:bg-gray-900">
-      
-          <Homepage/>
-          <span className='m-4'></span>
-          {/* <Planglist/> */}
-          {/* <div className='grid place-items-center w-full'>
-            <div className='container p-10'>
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-slate-900 dark:to-gray-800">
+        {/* Hero Section */}
+        <Homepage/>
 
-          <div className='grid grid-cols-3 w-full pb-5'>
-          <div className='col-span-1'>
-              <h1 className='text-4xl'>I......</h1>
+        {/* About Section */}
+        <section className="py-24 bg-white dark:bg-gray-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+                The Journey
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                From flashing custom ROMs on Android to building scalable web services, every line of code represents a step in the evolution of technology and user experience.
+              </p>
+              <div className="mt-6 flex justify-center">
+                <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
+              </div>
             </div>
 
+            <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+              <div className="text-center p-8 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-600">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Innovation First</h3>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  Started with Visual Basic, evolved through Android development, and now focused on scalable web solutions and system design.
+                </p>
+              </div>
+
+              <div className="text-center p-8 bg-gradient-to-br from-green-50 to-teal-100 dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-600">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Driven by Passion</h3>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  The thrill of bringing ideas to life fuels every project. No matter the challenges, the joy of creation keeps me moving forward.
+                </p>
+              </div>
+
+              <div className="text-center p-8 bg-gradient-to-br from-purple-50 to-pink-100 dark:from-gray-800 dark:to-gray-700 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-600">
+                <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Values Matter</h3>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  Building software that enhances lives while fostering happiness, transparency, and meaningful connections in everything I create.
+                </p>
+              </div>
+            </div>
           </div>
-          <div className='grid place-items-center md:grid-cols-3 gap-x-20 '>
-            <div className='col-span-1'>
-            <p>started out development in visual basic, flashing custom roms on android, then made software for them, been there for transition from eclipse to android studio, later transitioning to a more web centric role and with it came a need for scailing services, understanding fundamentals of linux. With a strong background in computer science, I possess robust system design and programming skills that I continue to refine on a day to day basis. Focusing on performance and efficiency, has helped in making me mostly programming language agnostic while maintaining a strong grasp of underlying concepts.</p>
-            </div>
-            <div className='md:pt-28 pt-6 col-span-1'>
-            <p>I firmly believe in the power of hard work. No matter how many times I need to start over, the thrill of bringing my vision to life is what drives me.</p>
-            </div>
-            <div className='md:pt-48 pt-6 col-span-1'>
-              <p>I value happiness and transparency in the people around me, and I'm genuinely interested in working within a culture that embodies these values.</p>
-            </div>
-          </div>
-            </div>
-          </div> */}
-          <GridProj/>
+        </section>
 
-          <Ct/>
-          <div className="items-center leading-tighter tracking-tight  text-center font-bold text-4xl p-10 pb-18">
-        {/* <span className="bg-gray-300"> */}
-         Listed below are some of my products
-        {/* </span> */}
-        </div>
+        {/* Grid Projects Section */}
+        <GridProj/>
 
-          <Project/>
-          
-          {/* Scroll to User Engagement Button */}
-          {/* <div className="flex w-full justify-center items-center py-8">
-            <button
-              onClick={() => document.getElementById('user-engagement')?.scrollIntoView({ behavior: 'smooth' })}
-              className="text-center shadow-indigo-500/50 shadow-[0_0_15px_rgba(0,0,0,0.2)] rounded-2xl mx-5 xl:mx-4 p-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium transition-all duration-300 hover:scale-105"
-            >
-              View Community Engagement →
-            </button>
-          </div> */}
-          
-          
-          <Issues/>
-          
-          <Commits/>
-          
-          {/* <Contactme/> */}
-          {/* <p className="text-center flex justify-center italic">This page was made using NextJS, React and Tailwind.</p> */}
+        {/* Contact Section */}
+        <Ct/>
+
+        {/* Projects Section */}
+        <Project/>
+
+        {/* Community Engagement */}
+        <Issues/>
+        <Commits/>
       </div>
-
-        {/* </div> */}
-      {/* </ThemeProvider> */}
-      </>
-
     );
   }
