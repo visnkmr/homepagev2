@@ -1,13 +1,16 @@
 'use client'
 
-import { LazyLoadImage } from "react-lazy-load-image-component";
+interface LlimageProps {
+    url: string;
+}
 
-export default function Llimage({url}){
+export default function Llimage({url}: LlimageProps){
     return(
-        <>
-        {/* <img src={url} className="w-full object-contain flex justify-center rounded-2xl " style={{ marginTop: '-15px' }}/> */}
-        <img  src={url} className="w-full object-contain flex justify-center rounded-2xl w-[250px]" style={{ marginTop: '-15px' }} />
-
-        </>
+        <div className="flex items-center justify-center w-full h-[400px] bg-transparent rounded-2xl overflow-hidden">
+            <img
+                src={url}
+                className="max-w-full max-h-full object-contain rounded-2xl"
+            />
+        </div>
     );
 }
