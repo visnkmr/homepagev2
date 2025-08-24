@@ -82,7 +82,7 @@ export default function Ct(){
                 </div>
 
                 {/* Testimonials Section */}
-                <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 p-8">
+                {/* <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 p-8"> */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {/* Mock testimonials - replace with actual review data */}
                         {reviews.map((review, index) => {
@@ -124,7 +124,7 @@ export default function Ct(){
                     {/* <div className="mt-8 border-t border-gray-200 dark:border-gray-600 pt-8"> */}
                         {/* {showlistorscroll(1)} */}
                     {/* </div> */}
-                </div>
+                {/* </div> */}
 
                 {/* Call to Action */}
                 <div className="text-center mt-12">

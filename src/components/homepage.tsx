@@ -82,14 +82,9 @@ export default function Homepage(){
                             href="https://visnkmr.github.io/appstore"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 animate-pulse"
+                            className="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-1000 animate-pulse"
                         >
                             <span>Explore App Store</span>
-                            <div className="ml-2 flex space-x-1">
-                                <div className="w-2 h-2 bg-white rounded-full animate-bounce"></div>
-                                <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
-                                <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
-                            </div>
                         </a>
 
                         <button

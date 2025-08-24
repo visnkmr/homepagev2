@@ -91,7 +91,7 @@ export default function Page() {
         </section>
 
         {/* Grid Projects Section */}
-        <GridProj/>
+        {/* <GridProj/> */}
 
         {/* Contact Section */}
         <Ct/>
