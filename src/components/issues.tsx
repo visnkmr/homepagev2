@@ -1,10 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import IssuesCountDtable from '../../app/issues/issues-count-dtable';
-import IssuesListDtable from '../../app/issues/issues-list-dtable';
-import { issuesCountColumns } from '../../app/issues/issues-count-columns';
-import { issuesListColumns } from '../../app/issues/issues-list-columns';
+import { IssuesCountCardView, IssuesListCardView } from './IssuesCardView';
 import { getIssuesListData, getIssuesCountData } from '../dealissues';
 import IssueCard from './issuecard';
 import IssuesCountCard from './issues-count-card';
@@ -133,16 +130,16 @@ export default function Issues() {
         </p> */}
         
         <div className="hidden sm:block w-full max-w-7xl space-y-8">
-          {/* Issues Count Summary Table */}
+          {/* Issues Count Summary Cards */}
           <div>
             <h3 className="text-2xl font-bold mb-4 text-center">User Interaction by Repository</h3>
-            <IssuesCountDtable columns={issuesCountColumns} />
+            <IssuesCountCardView />
           </div>
-          
-          {/* Detailed Issues List Table */}
+
+          {/* Detailed Issues List Cards */}
           <div>
             <h3 className="text-2xl font-bold mb-4 text-center">Active User Discussions</h3>
-            <IssuesListDtable columns={issuesListColumns} />
+            <IssuesListCardView />
           </div>
           
           <div className="flex w-full justify-center items-center mt-4">

@@ -12,8 +12,7 @@ import Indicommit from "./indicommit";
 import Mq from "./mq";
 import React from "react";
 import Textspin from "./textloop";
-import Dtable from "../../app/commits/dtable";
-import { columns } from "../../app/commits/columns";
+import CommitsCardView from "./CommitsCardView";
 // import { useState } from "react";
 export function appsfetcher() {
   // console.log(dwc().length)
@@ -54,8 +53,7 @@ export default function Commits() {
             Scroll/List
           </button> */}
           <div className="hidden sm:block">
-
-          <Dtable columns={columns}/>
+            <CommitsCardView />
           </div>
           <noscript>
         {showlistorscroll(0)}
