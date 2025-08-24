@@ -44,18 +44,21 @@ export default function Eachapp({app}: {app: any}) {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white leading-tight">
                 {app.title}
               </h3>
-              <div className="flex flex-col space-y-2 ml-4">
+              <div className="flex flex-row space-x-2 ml-4">
                 {app.oss === "t" && (
                   <Badge className="bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400 border-green-200 dark:border-green-800">
                     Open Source
                   </Badge>
                 )}
-                {app.download && (
-                  <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400 border-blue-200 dark:border-blue-800">
-                    {app.download} downloads
+                {/* Download Badge - Independent and Centered */}
+              {app.download && (
+                  <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400 border-blue-200 dark:border-blue-800 text-xs px-2 py-0.5">
+                    {app.download}
                   </Badge>
-                )}
+              )}
               </div>
+
+              
             </div>
           </div>
 
@@ -120,18 +123,20 @@ export default function Eachapp({app}: {app: any}) {
                     <h3 className="text-3xl font-bold text-gray-900 dark:text-white leading-tight">
                       {app.title}
                     </h3>
-                    <div className="flex flex-col space-y-2 ml-4">
+                    <div className="flex flex-row space-x-2 ml-4">
                       {app.oss === "t" && (
                         <Badge className="bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400 border-green-200 dark:border-green-800">
                           Open Source
                         </Badge>
-                      )}
-                      {app.download && (
-                        <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400 border-blue-200 dark:border-blue-800">
-                          {app.download} downloads
+                      )}{/* Download Badge - Independent and Centered */}
+                    {app.download && (
+                        <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400 border-blue-200 dark:border-blue-800 text-xs px-2 py-0.5">
+                          {app.download}
                         </Badge>
-                      )}
+                    )}
                     </div>
+
+                    
                   </div>
                 </div>
 
@@ -191,18 +196,20 @@ export default function Eachapp({app}: {app: any}) {
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white leading-tight">
                     {app.title}
                   </h3>
-                  <div className="flex flex-col space-y-2 ml-4">
+                  <div className="flex flex-row space-x-2 ml-4">
                     {app.oss === "t" && (
                       <Badge className="bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400 border-green-200 dark:border-green-800 text-xs">
                         Open Source
                       </Badge>
-                    )}
-                    {app.download && (
-                      <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400 border-blue-200 dark:border-blue-800 text-xs">
-                        {app.download} downloads
+                    )} {/* Download Badge - Independent and Centered */}
+                  {app.download && (
+                      <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400 border-blue-200 dark:border-blue-800 text-xs px-2 py-0.5">
+                        {app.download}
                       </Badge>
-                    )}
+                  )}
                   </div>
+
+                 
                 </div>
               </div>
 
@@ -258,18 +265,20 @@ export default function Eachapp({app}: {app: any}) {
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white leading-tight">
               {app.title}
             </h3>
-            <div className="flex flex-col space-y-2 ml-4">
+            <div className="flex flex-row space-x-2 ml-4">
               {app.oss === "t" && (
                 <Badge className="bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400 border-green-200 dark:border-green-800">
                   Open Source
                 </Badge>
-              )}
-              {app.download && (
-                <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400 border-blue-200 dark:border-blue-800">
-                  {app.download} downloads
+              )}{/* Download Badge - Independent and Centered */}
+            {app.download && (
+                <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400 border-blue-200 dark:border-blue-800 text-xs px-2 py-0.5">
+                  {app.download}
                 </Badge>
-              )}
+            )}
             </div>
+
+            
           </div>
         </div>
 
