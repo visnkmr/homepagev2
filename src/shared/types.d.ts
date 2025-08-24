@@ -296,5 +296,6 @@ interface WindowSize {
 interface review{
   appname:string,
   review:string,
+  username:string,
   storename:string
 }
