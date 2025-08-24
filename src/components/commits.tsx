@@ -67,7 +67,7 @@ export default function Commits() {
         <a
         href="/commits"
         target="_blank"
-        className="text-center sm:flex shadow-indigo-500/50 shadow-[0_0_15px_rgba(0,0,0,0.2)] rounded-2xl col-span-1 mx-5 xl:mx-4 mb-8  p-4 rounded-full place-self-center hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 ">Browse Commit Table
+        className="text-center sm:flex bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 hover:from-blue-700 hover:via-purple-700 hover:to-indigo-800 text-white font-semibold rounded-2xl col-span-1 mx-5 xl:mx-4 mb-8 p-4 place-self-center transition-all duration-500 transform hover:scale-105 shadow-lg hover:shadow-xl">Browse Commit Table
         </a>
         </div>
         </div>

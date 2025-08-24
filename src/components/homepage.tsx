@@ -82,7 +82,7 @@ export default function Homepage(){
                             href="https://visnkmr.github.io/appstore"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-1000 animate-pulse"
+                            className="group relative inline-flex items-center px-8 py-4 text-white font-semibold rounded-full shadow-lg hover:shadow-xl bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-[length:200%_100%] animate-gradient-flow transition-all duration-300 hover:scale-105"
                         >
                             <span>Explore App Store</span>
                         </a>
