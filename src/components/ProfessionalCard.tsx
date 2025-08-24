@@ -83,7 +83,7 @@ export function ProfessionalCard({ data, variant = 'default', className = '', ma
 
   const renderCommitCard = (commitData: CommitCardData) => (
     <Card
-      className={`group hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 cursor-pointer w-full min-h-[180px] ${className}`}
+      className={`group hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 cursor-pointer w-full min-h-[180px] border border-gray-100 dark:border-gray-700 hover:border-gray-200 dark:hover:border-gray-600 ${className}`}
       onClick={handleCardClick}
     >
       <CardHeader className={getVariantStyles()}>
@@ -127,7 +127,7 @@ export function ProfessionalCard({ data, variant = 'default', className = '', ma
 
   const renderIssueCard = (issueData: IssueCardData) => (
     <Card
-      className={`group hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 cursor-pointer w-full min-h-[180px] ${className}`}
+      className={`group hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 cursor-pointer w-full min-h-[180px] border border-gray-100 dark:border-gray-700 hover:border-gray-200 dark:hover:border-gray-600 ${className}`}
       onClick={handleCardClick}
     >
       <CardHeader className={getVariantStyles()}>
@@ -163,7 +163,7 @@ export function ProfessionalCard({ data, variant = 'default', className = '', ma
 
   const renderIssueCountCard = (issueCountData: IssueCountCardData) => (
     <Card
-      className={`group hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 cursor-pointer w-full min-h-[180px] ${className}`}
+      className={`group hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 cursor-pointer w-full min-h-[180px] border border-gray-100 dark:border-gray-700 hover:border-gray-200 dark:hover:border-gray-600 ${className}`}
       onClick={handleCardClick}
     >
       <CardHeader className={getVariantStyles()}>
