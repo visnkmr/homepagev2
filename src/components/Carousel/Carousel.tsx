@@ -176,7 +176,7 @@ const Carousel = (props: ICarouselProps): JSX.Element => {
   /**
    * Current Index Item of the Carousel
    */
-  const [currentIndex, setCurrentIndex] = React.useState<number>(isRepeating ? show : 0)
+  const [currentIndex, setCurrentIndex] = React.useState<number>(0)
 
   /**
    * Is the carousel's transition enabled
@@ -192,13 +192,7 @@ const Carousel = (props: ICarouselProps): JSX.Element => {
    * Handle if the carousel is repeating
    * and the currentIndex have been set to the last or first item
    */
-  React.useEffect(() => {
-    if (isRepeating) {
-      if (currentIndex === show || currentIndex === length) {
-        setTransitionEnabled(true)
-      }
-    }
-  }, [currentIndex, isRepeating, show, length])
+  // No need for this useEffect since no clones
 
   React.useEffect(() => {
     if (withIndicator) {
@@ -219,9 +213,7 @@ const Carousel = (props: ICarouselProps): JSX.Element => {
    * Move forward to the next item
    */
   const nextItem = () => {
-    if (isRepeating || currentIndex < (length - show)) {
-      setCurrentIndex(prevState => prevState + 1)
-    }
+    setCurrentIndex(prevState => (prevState + 1) % length)
   }
 
   React.useEffect(() => {
@@ -242,9 +234,7 @@ const Carousel = (props: ICarouselProps): JSX.Element => {
    * Move backward to the previous item
    */
   const previousItem = () => {
-    if (isRepeating || currentIndex > 0) {
-      setCurrentIndex(prevState => prevState - 1)
-    }
+    setCurrentIndex(prevState => (prevState - 1 + length) % length)
   }
 
   /**
@@ -290,50 +280,16 @@ const Carousel = (props: ICarouselProps): JSX.Element => {
     setTouchPosition(null)
   }
 
-  /**
-   * Handle when carousel transition's ended
-   */
-  const handleTransitionEnd = () => {
-    if (isRepeating) {
-      if (currentIndex === 0) {
-        setTransitionEnabled(false)
-        setCurrentIndex(length)
-      } else if (currentIndex === length + show) {
-        setTransitionEnabled(false)
-        setCurrentIndex(show)
-      }
-    }
-  }
+  // No handleTransitionEnd needed
 
-  /**
-   * Render previous items before the first item
-   */
-  const extraPreviousItems = React.useMemo(() => {
-    let output = []
-    for (let index = 0; index < show; index++) {
-      output.push(Children.toArray(children)[length - 1 - index])
-    }
-    output.reverse()
-    return output
-  }, [children, length, show])
-
-  /**
-   * Render next items after the last item
-   */
-  const extraNextItems = React.useMemo(() => {
-    let output = []
-    for (let index = 0; index < show; index++) {
-      output.push(Children.toArray(children)[index])
-    }
-    return output
-  }, [children, show])
+  // No extra items needed, using index modulo
 
   const renderDots = React.useMemo(() => {
     let output = []
 
     const localShow = isRepeating ? show : 0
     const localLength = isRepeating ? length : Math.ceil(length / show)
-    const calculatedActiveIndex = (currentIndex - localShow) < 0 ? (length + (currentIndex - localShow)) : currentIndex - localShow
+    const calculatedActiveIndex = currentIndex % localLength
 
     for (let index = 0; index < localLength; index++) {
       let className = ''
@@ -380,7 +336,7 @@ const Carousel = (props: ICarouselProps): JSX.Element => {
         {...wrapperProps}
       >
         {
-          (isRepeating || currentIndex > 0) ?
+          (length > show) ?
             renderPreviousButton ?
             renderPreviousButton(previousItem, 'left-arrow-button')
             :
@@ -408,21 +364,13 @@ const Carousel = (props: ICarouselProps): JSX.Element => {
               transform: `translateX(-${currentIndex * (100 / show)}%)`,
               transition: !isTransitionEnabled ? 'none' : undefined,
             }}
-            onTransitionEnd={() => handleTransitionEnd()}
+            // No transition end needed
           >
-            {
-              (length > show && isRepeating) &&
-              extraPreviousItems
-            }
             {children}
-            {
-              (length > show && isRepeating) &&
-              extraNextItems
-            }
           </div>
         </div>
         {
-          (isRepeating || currentIndex < (length - show)) ?
+          (length > show) ?
             renderNextButton ?
             renderNextButton(nextItem, 'right-arrow-button')
             :
