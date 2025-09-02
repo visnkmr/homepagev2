@@ -276,9 +276,30 @@ h4{
   transform-origin: center;
 }
 
+/* Float animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.animate-float-delayed {
+  animation: float 4s ease-in-out infinite;
+  animation-delay: 1s;
+  transform-origin: center;
+}
+
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .animate-pulsate, .animate-swing {
+  .animate-pulsate, .animate-swing, .animate-float {
     animation: none;
   }
 }
