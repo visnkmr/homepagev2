@@ -41,31 +41,31 @@ const TEXTS = [
 //     "TV",
 //     ];
 export default function Homepage(){
-    const [showb,setsb]=useState(false)
+    const [showb,setsb]=useState(true)
 
     return(
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-gray-900 dark:via-slate-900 dark:to-gray-800">
             {/* Hero Section */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 ">
                 <div className="text-center">
                     {/* Main Headline */}
-                    <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6">
-                        <span className="block">Building the Future</span>
+                    <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 pb-12">
+                        <span className="block">Building</span>
                         <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                            One Line at a Time
+                            Apps that inspire
                         </span>
                     </h1>
 
                     {/* Subtitle */}
-                    <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+                    {/* <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
                         Platform-agnostic developer crafting exceptional experiences across Android, Fire OS, Windows, Linux, Mac, and Web.
                         <span className="block mt-2 font-semibold text-indigo-600 dark:text-indigo-400">
                             Shipping software since 2018. Powering 15M+ sessions worldwide.
                         </span>
-                    </p>
+                    </p> */}
 
                     {/* CTA Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <a
                             href="https://github.com/visnkmr"
                             target="_blank"
@@ -99,14 +99,14 @@ export default function Homepage(){
                     </div>
 
                     {/* Store Links */}
-                    <div className="flex justify-center">
+                    {/* <div className="flex justify-center">
                         <Stores {...stores} />
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
             {/* Projects Preview Toggle */}
-            <div className="flex justify-center pb-16">
+            <div className="hidden sm:flex sm:justify-center sm:pb-16">
                 <button
                     onClick={() => setsb(e => !e)}
                     className="group relative inline-flex items-center px-6 py-3 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 font-medium rounded-full hover:bg-indigo-200 dark:hover:bg-indigo-900/50 transition-all duration-200"

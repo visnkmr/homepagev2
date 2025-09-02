@@ -52,13 +52,13 @@ export default function Commits() {
           {/* <button onClick={()=>whichone===1?setwhichone(0):setwhichone(1)}>
             Scroll/List
           </button> */}
-          <div className="hidden sm:block">
+          <div className="block">
             <CommitsCardView />
           </div>
           <noscript>
         {showlistorscroll(0)}
         </noscript>
-        <div className="sm:hidden w-full">
+        <div className="hidden w-full">
 
         {showlistorscroll(1)}
         <div

@@ -129,7 +129,7 @@ export default function Issues() {
           Issues summary and detailed list from tracked repositories
         </p> */}
         
-        <div className="hidden sm:block w-full max-w-7xl space-y-8">
+        <div className="block w-full max-w-7xl space-y-8">
           {/* Issues Count Summary Cards */}
           <div>
             <h3 className="text-2xl font-bold mb-4 text-center">User Interaction by Repository</h3>
@@ -153,7 +153,7 @@ export default function Issues() {
           </div>
         </div>
         
-        <div className="sm:hidden w-full max-w-2xl px-4">
+        <div className="hidden w-full max-w-2xl px-4">
           {/* Issues Count Summary for Mobile */}
           {allIssuesCountData.length > 0 && (
             <div className="mb-8">
