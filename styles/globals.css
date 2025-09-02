@@ -245,3 +245,40 @@ h4{
 .animate-gradient-flow {
   animation: gradient-flow 3s ease infinite;
 }
+
+/* Heart pulsate animation */
+@keyframes pulsate {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.animate-pulsate {
+  animation: pulsate 1.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Swing animation */
+@keyframes swing {
+  0%, 100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+.animate-swing {
+  animation: swing 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-pulsate, .animate-swing {
+    animation: none;
+  }
+}
