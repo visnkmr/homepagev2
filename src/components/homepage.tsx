@@ -120,7 +120,7 @@ export default function Homepage(){
 
             {/* Projects Carousel */}
             {showb && (
-                <div className="pb-16">
+                <div className="flex justify-center pb-16">
                     <Caro/>
                 </div>
             )}
