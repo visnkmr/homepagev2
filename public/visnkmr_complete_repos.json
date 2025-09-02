@@ -1,0 +1,298 @@
+[
+  {
+    "name": "ADB-Remote-Keyboard-Shell",
+    "description": "Remote ADB Shell"
+  },
+  {
+    "name": "AmazonSalesDataAnalyzer",
+    "description": "Analyze amazon sales data csv file using R."
+  },
+  {
+    "name": "apihub",
+    "description": "1- Appcenter->MySQL 2- Gitea, Codeberg->JSON file"
+  },
+  {
+    "name": "AppListManager",
+    "description": "View List of System and user apps installed on device, memory usage, App details, current memory usage. Backup individual app apks."
+  },
+  {
+    "name": "aqi",
+    "description": "AQI Finder for self use"
+  },
+  {
+    "name": "autoweatherstation-aws-ec2-rust",
+    "description": null
+  },
+  {
+    "name": "backgroundappslist",
+    "description": "Force close apps that are running in the background. Made using Java, Gradle, Android Studio. #2 most downloaded app of all time for Fire TV for the respective category on Amazon Appstore."
+  },
+  {
+    "name": "batuapp",
+    "description": null
+  },
+  {
+    "name": "batu_desktop_app",
+    "description": null
+  },
+  {
+    "name": "bison",
+    "description": "Simple ONNX parser and to be inferance lib in pure rust, static binary exportable"
+  },
+  {
+    "name": "calculator",
+    "description": "Valutare is a simple calculator that lets you find results instantly thanks to Advance Result Prompts, stores infinite history to SQL DB."
+  },
+  {
+    "name": "checknlock",
+    "description": "Checks if the current active window is of twitch or youtube and locks the screen if video has not been played for more than 2 minutes."
+  },
+  {
+    "name": "dataop",
+    "description": "simple basic functionality testing Frontend for showing data from planetscale db"
+  },
+  {
+    "name": "dude",
+    "description": "Disk Usage API JSON endpoint i use with polybar"
+  },
+  {
+    "name": "filedime",
+    "description": "A High Performance File explorer made using rust for PC. Support multi-window, tabs, fzf like search, swift folder size compute, hot reload for markdown, html."
+  },
+  {
+    "name": "filedimespeech-extension",
+    "description": "add a \"play using filedime speech\" to context menu in your browser"
+  },
+  {
+    "name": "filegpt-filedime",
+    "description": "GPT plugin for filedime to Query your files* locally using ollama via RAG also includes a text to speech engine with a more melo voice to listen to your filedime preview file contents and gpt responses also can be to listen to web content using filedimespeech extension."
+  },
+  {
+    "name": "file_explorer",
+    "description": "A basic file explorer. Implements Data parallelism for select discovery functions, Fuzzy logic based search, stack based history, async based search.  Made using Java, Gradle, Android Studio. Top 5 most downloaded app of all time for Fire TV for the respective category on Amazon Appstore"
+  },
+  {
+    "name": "fingraph",
+    "description": null
+  },
+  {
+    "name": "G1DBN",
+    "description": null
+  },
+  {
+    "name": "Google-Play-Console-Data-Analyzer",
+    "description": "Analyze Play console data csv file using R."
+  },
+  {
+    "name": "hemo",
+    "description": "LLM chat UI made for use with Filedime"
+  },
+  {
+    "name": "hemowindowsWPF",
+    "description": null
+  },
+  {
+    "name": "hemo_filedime",
+    "description": "GUI used for AI file chat in filedime"
+  },
+  {
+    "name": "homepagev2",
+    "description": "NextJS SSG+Tailwind+React"
+  },
+  {
+    "name": "issuereportwriter",
+    "description": "Issue report writer for Vishnu N K's apps."
+  },
+  {
+    "name": "kpc",
+    "description": "kafka producer consumer"
+  },
+  {
+    "name": "listallfrompscale",
+    "description": "Rust server code hosted on Vercel (Amazon Lamba ) to act as endpoint API for access to Planetscale hosted DB, rate limited using upstash."
+  },
+  {
+    "name": "localspeedtest",
+    "description": null
+  },
+  {
+    "name": "LogLink2Disk_chrome",
+    "description": " Extension for chrome that lets you log url of the active window and its title to disk."
+  },
+  {
+    "name": "LogLink2Disk_Firefox_extension",
+    "description": "  Extension for firefox that lets you log url of the active window and its title to disk. "
+  },
+  {
+    "name": "mapo",
+    "description": null
+  },
+  {
+    "name": "markdown_viewer_pc",
+    "description": null
+  },
+  {
+    "name": "mflist",
+    "description": null
+  },
+  {
+    "name": "MP_Docker",
+    "description": "RedditDataAnalyzer Docker Image. Configured using VS Code, RStudio."
+  },
+  {
+    "name": "netspeed-test",
+    "description": "Test Internet download speed, latency (ping), scan LAN / WiFi for connected devices; all while consuming the minimum amount of data required. "
+  },
+  {
+    "name": "netspeed_gui",
+    "description": "Github mirror of codeberg repo. GUI for netspeed sse server written using tauri framework,rust."
+  },
+  {
+    "name": "netspeed_pc",
+    "description": "Monitor live bandwidth usage/ network speed on PC. Native version also available for Android, separately."
+  },
+  {
+    "name": "netspeed_server",
+    "description": " Netspeed server using server sent events for backend for netspeed overlay app for windows, linux and mac"
+  },
+  {
+    "name": "netspeed_server_http",
+    "description": "Mirror of local gitea repo for github. Netspeed server for netspeed overlay app for windows, linux and mac"
+  },
+  {
+    "name": "netspeed_tauri_websocket",
+    "description": "Github mirror of codeberg repo. Monitor live bandwidth usage/ network speed on any device running on any OS except iOS. "
+  },
+  {
+    "name": "nokb",
+    "description": null
+  },
+  {
+    "name": "nokeyboard",
+    "description": "A revolutionary keyboard that allows you to hide your keyboard when not required. Also useful if you use bluetooth keyboard or just want to scroll through text on device without the keyboard popping up."
+  },
+  {
+    "name": "ns_gui",
+    "description": "NetSpeed Monitor: python based GUI that shows per second upload, download speed from the JSON endpoint provided by ns_daemon"
+  },
+  {
+    "name": "onscreenkeyboard",
+    "description": "An onscreen keyboard for PC built using rust. Thanks to rdev and gtk"
+  },
+  {
+    "name": "overlay-talkinghead",
+    "description": null
+  },
+  {
+    "name": "perlink",
+    "description": "Open source utility to choose browser on a per link basis on linux, windows or mac."
+  },
+  {
+    "name": "powermenu",
+    "description": "Quickly open the system default Power Menu UI on your device."
+  },
+  {
+    "name": "prefstore",
+    "description": "Easily store and retrieve preferences when using rust."
+  },
+  {
+    "name": "progressbar_tui_rs",
+    "description": "Algo to print progressbar based on progress % passed out of 100"
+  },
+  {
+    "name": "RedditDataAnalyser",
+    "description": "Statistical analysis for a particular query can be done based on reddit data."
+  },
+  {
+    "name": "rs-drivelist",
+    "description": "Rust implementation of Balena's drivelist"
+  },
+  {
+    "name": "save-crash-logs-rs",
+    "description": "Save Panic Crash log to file locally when using rust,"
+  },
+  {
+    "name": "savetodisk",
+    "description": "Server for LogLinktoDisk to Saves links send via the extension to your local/remote storage."
+  },
+  {
+    "name": "scribeocr",
+    "description": "Web interface for proofreading OCR and creating fully-digitized documents. "
+  },
+  {
+    "name": "selflessons",
+    "description": null
+  },
+  {
+    "name": "smsanalyzer",
+    "description": null
+  },
+  {
+    "name": "SMSWordCloud",
+    "description": null
+  },
+  {
+    "name": "sortedcars",
+    "description": "Find your dream car based on height, width, length, wheelbase, ground clearence. Find by range of each of them."
+  },
+  {
+    "name": "sortedproc",
+    "description": null
+  },
+  {
+    "name": "storeapp",
+    "description": null
+  },
+  {
+    "name": "sysinfo-py",
+    "description": null
+  },
+  {
+    "name": "takenotes",
+    "description": "Note taking app that saves as you type. Uses local storage for Firefox extension and sharedpreference on Android."
+  },
+  {
+    "name": "taotlus",
+    "description": "Taotlus lists all apps installed on your device; including side loaded apps; can be used as a Launcher if required. Implements Fuzzy logic based search, SQL as DB, implements Android TV recommendation API to list recently used apps on homescreen itself."
+  },
+  {
+    "name": "teave",
+    "description": "Easily find, search, browse, sort, manage, extract APK of installed User and System apps. Fuzzy logic based search, Uses StorageAccessFramework for saving extracted APK."
+  },
+  {
+    "name": "timenetspeed",
+    "description": "Monitor live bandwidth usage/ network speed on any device running on any OS except iOS. Uses peristent XML overlay with Java for android, Rust daemon with a python frontend on PCs."
+  },
+  {
+    "name": "trainstationsorter",
+    "description": null
+  },
+  {
+    "name": "troubleshootapp",
+    "description": null
+  },
+  {
+    "name": "volumebutton",
+    "description": "Software Volume Button to open the default Volume Change UI on your device."
+  },
+  {
+    "name": "wfm",
+    "description": "Transfer files to your android/Fire devices using any web browser. Amazon Appstore version supports transfers to both Internal Storage, External Storage, A limited replica is available on Google Play that uses Storage Access Framework and requires no permission but can only send to Downloads folder. "
+  },
+  {
+    "name": "wfmossfrontend",
+    "description": "React, Tailwind, NextJS frontend for using APIs provided wireless file manager android app. Also available as an app for MacOS, Windows, Linux."
+  },
+  {
+    "name": "wfmossfrontend-tauri",
+    "description": "About OSS frontend for wfm apis"
+  },
+  {
+    "name": "wfm_wrtc",
+    "description": "Send files between devices using webrtc . Initially implemented using ably and vercel kvstore, later replaced with planetscale for signalling needs."
+  },
+  {
+    "name": "whisper",
+    "description": "Robust Speech Recognition via Large-Scale Weak Supervision"
+  }
+]
