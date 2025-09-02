@@ -3,10 +3,13 @@
 // import { useState } from "react";
 
    
+import { useState } from "react";
 import { findLatestapps } from "../posts";
 
 import Eachapp from "./eachapp";
+import RepoList from "./RepoList";
 async function appsfetcher() {
+
   var apps = await findLatestapps("projects");
   // var apps = [] as any;
   //  apps = await findLatestapps("projects/inp");
@@ -22,6 +25,7 @@ async function appsfetcher() {
   );
 }
 export default function Project() {
+  const [showRepos, setShowRepos] = useState(false);
     return (
       <section id="projects" className="py-24 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,6 +46,12 @@ export default function Project() {
           <div className="grid grid-cols-1 gap-8 lg:gap-12">
             {appsfetcher()}
           </div>
+          {/* <div className="flex justify-center mt-8 mb-8">
+          <button onClick={() => setShowRepos(!showRepos)} className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">
+            {showRepos ? 'Hide All Repositories' : 'Show All Repositories'}
+          </button>
+        </div> */}
+        {/* {showRepos && <RepoList />} */}
 
           {/* Call to Action */}
           <div className="text-center mt-16">
