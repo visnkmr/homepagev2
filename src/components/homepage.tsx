@@ -65,7 +65,7 @@ export default function Homepage(){
                     </p> */}
 
                     {/* CTA Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pb-16">
                         <a
                             href="https://github.com/visnkmr"
                             target="_blank"
